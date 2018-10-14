@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/10/04 15:52:16.000.907,=C:\DCE Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/04 15:54:44.000.350,C:\DCE Projects\Animations for Patreon supporting\Animation 1 - StartingDate 10-4-2018\uMain.pas=C:\DCE Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/04 15:54:44.000.350,C:\DCE Projects\Animations for Patreon supporting\Animation 1 - StartingDate 10-4-2018\uMain.fmx=C:\DCE Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/10/04 15:55:04.000.320,C:\DCE Projects\Animations for Patreon supporting\Animation 1 - StartingDate 10-4-2018\LoginForm.dproj=C:\DCE Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

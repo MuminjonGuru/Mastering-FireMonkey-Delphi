@@ -1,0 +1,137 @@
+inherited FrmMain_NmXhdpiPh: TFrmMain_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    Sizes = (
+      400s
+      615s
+      400s
+      615s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited Rectangle1: TRectangle
+        Size.Width = 400.000000000000000000
+        Size.Height = 615.000000000000000000
+        Stroke.Color = x19000000
+        inherited GaussianBlurEffect2: TGaussianBlurEffect
+          BlurAmount = 0.899999976158142100
+        end
+      end
+      inherited Rectangle2: TRectangle
+        Size.Width = 400.000000000000000000
+        Size.Height = 615.000000000000000000
+        Stroke.Kind = Resource
+        Stroke.Cap = Round
+        inherited Label3: TLabel
+          Position.Y = 223.000000000000000000
+          Size.Width = 400.000000000000000000
+          Size.Height = 58.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited BtnContinue: TButton
+          Position.Y = 504.000000000000000000
+          Size.Width = 220.000000000000000000
+          Size.Height = 41.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited Label2: TLabel
+        AutoSize = True
+        Size.Width = 186.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  inherited VSBLogin: TVertScrollBox
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    Viewport.Width = 400.000000000000000000
+    Viewport.Height = 615.000000000000000000
+    inherited LytMain: TLayout
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+      inherited RctBackground: TRectangle
+        Size.Width = 400.000000000000000000
+        Size.Height = 615.000000000000000000
+      end
+      inherited RctMain: TRectangle
+        Size.Width = 400.000000000000000000
+        Size.Height = 615.000000000000000000
+        inherited LytBody: TLayout
+          Size.Width = 400.000000000000000000
+          Size.Height = 515.000000000000000000
+          inherited EdtUsername: TEdit
+            Size.Width = 358.000000000000000000
+            inherited LytRqrdUsername: TLayout
+              Margins.Top = 20.000000000000000000
+              Position.X = 244.000000000000000000
+              Position.Y = 20.000000000000000000
+              Size.Height = 12.000000000000000000
+              inherited RRRed: TRoundRect
+                Size.Height = 12.000000000000000000
+              end
+              inherited RR4Text: TRoundRect
+                Size.Height = 12.000000000000000000
+                inherited TxtRqrdUsername: TText
+                  Size.Height = 12.000000000000000000
+                end
+              end
+            end
+          end
+          inherited LblUsername: TLabel
+            Size.Height = 28.000000000000000000
+          end
+          inherited EdtPassword: TEdit
+            Size.Width = 358.000000000000000000
+            inherited LytRqrdPassword: TLayout
+              Margins.Top = 20.000000000000000000
+              Position.X = 244.000000000000000000
+              Position.Y = 20.000000000000000000
+              Size.Height = 12.000000000000000000
+              inherited RRRedPassword: TRoundRect
+                Size.Height = 12.000000000000000000
+              end
+              inherited RR4Text2: TRoundRect
+                Size.Height = 12.000000000000000000
+                inherited TxtRqrdPass: TText
+                  Size.Height = 12.000000000000000000
+                end
+              end
+            end
+          end
+          inherited LblPassword: TLabel
+            Size.Height = 28.000000000000000000
+          end
+          inherited BtnLogin: TButton
+            Size.Width = 365.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited LytHeader: TLayout
+          Size.Width = 400.000000000000000000
+          inherited LblTitleLogin: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited LytBottom: TLayout
+          Position.Y = 565.000000000000000000
+          Size.Width = 400.000000000000000000
+          inherited SpeedButton1: TSpeedButton
+            Size.Width = 400.000000000000000000
+            Size.Height = 48.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+end
