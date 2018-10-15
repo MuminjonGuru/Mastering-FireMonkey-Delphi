@@ -103,7 +103,7 @@ begin
   if (EdtUsername.Text <> '') and (EdtPassword.Text <> '') then
   begin
     FltAniLoginForm.Start;
-//    VSBLogin.Visible := False;
+//    VSBLogin.Visible := False;  // if you want to see the result without TTask, you can uncomment this line and also TTask creation code
     Task.Start;
   end;
 end;
@@ -124,12 +124,13 @@ end;
 
 procedure TFrmMain.FormCreate(Sender: TObject);
 begin
-  EdtUsername.SetFocus;
+  EdtUsername.SetFocus;  // UX :)
 end;
 
 procedure TFrmMain.GestureDone(Sender: TObject;
   const EventInfo: TGestureEventInfo; var Handled: Boolean);
 begin
+  // you may delete this procedure
   case EventInfo.GestureID of
     sgiLeft:
       begin
