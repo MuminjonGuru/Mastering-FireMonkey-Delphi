@@ -13,3 +13,12 @@ What I have used?
  - Tab transition which lots of  new developer don’t use it. It is very simple, you just need to learn the TActionList component.
  - The TRectangle component. Why TRectangle not just TLayout or TPanel. Because the TRectangle is much more easy to use.
  - The System.Threading module that you can use it for creating multi-threaded applications.
+
+I'm on social networks:
+- [FaceBook](https://www.facebook.com/wwwdelphiuz/)
+- [Twitter](https://twitter.com/MuminjonGuru)
+- [LinkedIn](https://www.linkedin.com/in/muminjon-abduraimov/)
+- [YouTube](https://youtube.com/MuminjonAbduraimov)
+
+My Android app which is built with Delphi FireMonkey
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.delphiapplications.delphiexamples)
