@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.Edit, FMX.Objects,
   FMX.Effects, FMX.Filter.Effects, FMX.Ani, FMX.TabControl, FMX.Gestures,
-  System.Actions, FMX.ActnList;
+  System.Actions, FMX.ActnList, FMX.DialogService.Async;
 
 type
   TFrmMain = class(TForm)
@@ -77,7 +77,8 @@ uses
 
 procedure TFrmMain.BtnContinueClick(Sender: TObject);
 begin
-  ShowMessage('test');
+  TDialogServiceAsync.MessageDialog('test', TMsgDlgType.mtInformation,
+    [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbCancel], TMsgDlgBtn.mbCancel, 0);
 end;
 
 procedure TFrmMain.BtnLoginClick(Sender: TObject);
