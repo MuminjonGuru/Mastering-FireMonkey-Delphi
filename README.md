@@ -1,6 +1,7 @@
 ## Hello World! This is Muminjon
-I have made a simple but valuable Animation demo using the [Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
+I have made this simple but valuable Animation demo using the [Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
 
+## Click the star button and follow me!
 ## Click the star button and follow me!
 
 **Here you can learn more about this project in this article: [Delphi.Uz](https://delphi.uz/2018/10/15/delphi-programming-language/a-new-ttask-based-login-form-with-tfloatanimation/)**
