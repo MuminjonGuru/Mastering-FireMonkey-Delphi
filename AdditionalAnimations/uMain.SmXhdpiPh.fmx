@@ -1,0 +1,81 @@
+inherited FrmMain_SmXhdpiPh: TFrmMain_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited SBtnDownload: TSpeedButton
+    Size.Width = 0.000000000000000000
+  end
+  inherited LytTop: TLayout
+    Size.Width = 250.000000000000000000
+  end
+  inherited Rct1: TRectangle
+    Fill.Color = claNull
+    inherited Rectangle2: TRectangle
+      inherited Btn1: TButton
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Layout2: TLayout
+        inherited Layout3: TLayout
+          inherited Label1: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited Layout4: TLayout
+          inherited Label2: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited Rectangle1: TRectangle
+          Fill.Color = claNull
+          inherited Button1: TButton
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+  inherited BtnSetStopValue: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 112.000000000000000000
+  end
+  inherited TabControl1: TTabControl
+    Sizes = (
+      140s
+      185s
+      140s
+      185s
+      140s
+      185s
+      140s
+      185s)
+    inherited TabItem1: TTabItem
+      Size.Width = 35.000000000000000000
+      Size.Height = 15.000000000000000000
+      ExplicitSize.cx = 71.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 35.000000000000000000
+      Size.Height = 15.000000000000000000
+      ExplicitSize.cx = 71.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 35.000000000000000000
+      Size.Height = 15.000000000000000000
+      ExplicitSize.cx = 71.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      Size.Width = 35.000000000000000000
+      Size.Height = 15.000000000000000000
+      ExplicitSize.cx = 34.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+    end
+  end
+  inherited RctToggleBtn: TRectangle
+    inherited RctToggle: TRectangle
+      Position.X = 50.000000000000000000
+    end
+  end
+end
