@@ -1,0 +1,87 @@
+inherited FrmMain_Windows: TFrmMain_Windows
+  ClientHeight = 438
+  ClientWidth = 514
+  DesignerMasterStyle = 3
+  inherited SBtnDownload: TSpeedButton
+    Size.Width = 214.000000000000000000
+  end
+  inherited LytTop: TLayout
+    Size.Width = 514.000000000000000000
+  end
+  inherited Rct1: TRectangle
+    Fill.Color = claNull
+    inherited Rectangle2: TRectangle
+      inherited Btn1: TButton
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Layout2: TLayout
+        inherited Layout3: TLayout
+          inherited Label1: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited Layout4: TLayout
+          inherited Label2: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited Rectangle1: TRectangle
+          Fill.Color = claNull
+          inherited Button1: TButton
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+  inherited TabControl1: TTabControl
+    Position.X = 248.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Height = 176.000000000000000000
+    TabIndex = 0
+    Sizes = (
+      140s
+      153s
+      140s
+      153s
+      140s
+      153s
+      140s
+      153s)
+    inherited TabItem1: TTabItem
+      IsSelected = True
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      IsSelected = False
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+  end
+  inherited BtnNext: TButton
+    Position.X = 320.000000000000000000
+    Position.Y = 224.000000000000000000
+  end
+  inherited BtnPrevious: TButton
+    Position.X = 250.000000000000000000
+    Position.Y = 224.000000000000000000
+  end
+  inherited RctToggleBtn: TRectangle
+    inherited RctToggle: TRectangle
+      Position.X = 50.000000000000000000
+    end
+  end
+  inherited ActionList1: TActionList
+    Left = 200
+    Top = 288
+  end
+end
