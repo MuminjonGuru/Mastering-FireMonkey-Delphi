@@ -1,0 +1,62 @@
+inherited FrmMain_Surface: TFrmMain_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 3
+  inherited SBtnDownload: TSpeedButton
+    Size.Width = 780.000000000000000000
+  end
+  inherited LytTop: TLayout
+    Size.Width = 1080.000000000000000000
+  end
+  inherited Rct1: TRectangle
+    inherited Rectangle2: TRectangle
+      inherited Btn1: TButton
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Layout2: TLayout
+        inherited Layout3: TLayout
+          inherited Label1: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited Layout4: TLayout
+          inherited Label2: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited Rectangle1: TRectangle
+          inherited Button1: TButton
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+  inherited TabControl1: TTabControl
+    Sizes = (
+      137s
+      177s
+      137s
+      177s
+      137s
+      177s
+      137s
+      177s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+  end
+end
