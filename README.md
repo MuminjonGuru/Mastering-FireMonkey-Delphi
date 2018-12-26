@@ -16,7 +16,7 @@ What I have used?
  
 ## Also there are some additional animations for your Delphi FireMonkey Project 
 
-Here you can see the demonstration of the Additional Animations: [src](https://kun.uz/37445310)
+Here you can see the demonstration of the Additional Animations: [src](https://photos.app.goo.gl/yDSLi9T9CxLbYXbj8)
 
 I'm on social networks:
 - [FaceBook](https://www.facebook.com/wwwdelphiuz/)
