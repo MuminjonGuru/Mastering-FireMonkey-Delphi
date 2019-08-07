@@ -1,4 +1,4 @@
-### Show some :heart: and star the repo to support the project
+## Show some :heart: and star the repo to support the project
 
 ## Hello World! This is Muminjon
 I have made this simple but valuable Animation demo using the [Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
