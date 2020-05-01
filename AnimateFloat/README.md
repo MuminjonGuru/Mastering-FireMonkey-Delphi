@@ -23,3 +23,4 @@
     end; 
 
 
+You can control ShowScrollBar property of the VertScrollBarClient for UI purposes.
