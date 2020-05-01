@@ -9,7 +9,7 @@ uses
   FMX.StdCtrls, FMX.Ani;
 
 type
-  TForm1 = class(TForm)
+  TFormMain = class(TForm)
     LytMain: TLayout;
     RctAnimate: TRectangle;
     LytMainBottom: TLayout;
@@ -17,7 +17,9 @@ type
     StyleBook1: TStyleBook;
     Label1: TLabel;
     VertScrollBoxClient: TVertScrollBox;
+    CheckBox1: TCheckBox;
     procedure BtnActionClick(Sender: TObject);
+    procedure CheckBox1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -25,13 +27,14 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FormMain: TFormMain;
 
 implementation
 
 {$R *.fmx}
+{$R *.Windows.fmx MSWINDOWS}
 
-procedure TForm1.BtnActionClick(Sender: TObject);
+procedure TFormMain.BtnActionClick(Sender: TObject);
 begin
   if RctAnimate.Height = 250 then
   begin
@@ -45,6 +48,14 @@ begin
                           TAnimationType.&In, TInterpolationType.Linear);
     BtnAction.Text := 'Collapse';
   end;
+end;
+
+procedure TFormMain.CheckBox1Change(Sender: TObject);
+begin
+  if CheckBox1.IsChecked = True then
+    VertScrollBoxClient.ShowScrollBars := CheckBox1.IsChecked
+  else
+    VertScrollBoxClient.ShowScrollBars := CheckBox1.IsChecked;
 end;
 
 end.

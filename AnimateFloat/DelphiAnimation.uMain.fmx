@@ -1,14 +1,15 @@
-object Form1: TForm1
+object FormMain: TFormMain
   Left = 0
   Top = 0
   Caption = 'Delphi Animation'
   ClientHeight = 572
   ClientWidth = 407
+  Position = ScreenCenter
   StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 3
+  DesignerMasterStyle = 0
   object LytMain: TLayout
     Align = Client
     Margins.Left = 15.000000000000000000
@@ -132,6 +133,21 @@ object Form1: TForm1
           TabOrder = 3
         end
       end
+    end
+    object CheckBox1: TCheckBox
+      Align = MostBottom
+      IsChecked = True
+      Margins.Left = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 528.000000000000000000
+      Size.Width = 347.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Show Scroll Bar'
+      OnChange = CheckBox1Change
     end
   end
   object StyleBook1: TStyleBook
