@@ -1,3 +1,5 @@
+See the animation here: https://github.com/MuminjonGuru/FireMonkey-powered-Login-form-with-animations./blob/master/AnimateFloat/TAnimator.gif
+
 *TAnimator* from **FMX.Ani**
 
      TAnimator.AnimateFloat(RctAnimate, 'Height', 100, 0.8,
