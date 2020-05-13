@@ -1,4 +1,4 @@
-## Show some :heart: and star the repo to support the project
+## Show some :heart: and Star the repo to support the project
 
 ## Hello World! This is Muminjon
 I have made this simple but valuable Animation demo using the [Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
@@ -30,3 +30,5 @@ I'm on social networks:
 
 My Android app which is built with Delphi FireMonkey
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.delphiapplications.delphiexamples)
+
+Smash the Star Button mate!
