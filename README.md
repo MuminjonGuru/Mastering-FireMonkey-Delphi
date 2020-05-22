@@ -1,13 +1,15 @@
-## Show some :heart: and Star the repo to support the project
+## Show some :heart: and Star the repo to support the project!
 
 ## Hello World! This is Muminjon
-I have made this simple but valuable Animation demo using the [Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
+I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free and you can also make contributions! [Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
 
 ## Click the star button and follow me!
 
-**Here you can learn more about this project in this article: [Delphi.Uz](https://delphi.uz/2018/10/15/delphi-programming-language/a-new-ttask-based-login-form-with-tfloatanimation/)**
-
-![enter image description here](https://i2.wp.com/delphi.uz/wp-content/uploads/2017/01/A-New-TTask-based-Login-Form-with-TFloatAnimation.png?resize=320,320&ssl=1)
+ - [Animations](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AdditionalAnimations) to include in your project
+ - FireMonkey Animations powered [Login Form](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/src)
+ - _[TAnimator](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AnimateFloat)_ from **FMX.Ani**
+ - **[ListOfMealsUIDemo](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/ListOfMealsUIDemo)** with custom styles
+ - **[QuizAppTemplate](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/QuizAppTemplate)** for your Quiz Apps
 
 What I have used? 
 
@@ -20,7 +22,7 @@ What I have used?
 
 Here you can see the demonstration of the Additional Animations: [src](https://photos.app.goo.gl/yDSLi9T9CxLbYXbj8)
 
-I'm on social networks:
+I'm on social networks: **Follow me buddy!**
 - [FaceBook](https://www.facebook.com/wwwdelphiuz/)
 - [Twitter](https://twitter.com/MuminjonGuru)
 - [Medium](https://medium.com/@muminjonguru)
@@ -31,4 +33,4 @@ I'm on social networks:
 My Android app which is built with Delphi FireMonkey
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.delphiapplications.delphiexamples)
 
-Smash the Star Button mate!
+Smash the **Star** Button mate!
