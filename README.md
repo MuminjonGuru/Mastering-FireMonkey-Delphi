@@ -5,9 +5,9 @@ I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free 
 
 ## Click the star button and follow me!
 
- - [Animations](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AdditionalAnimations) to include in your project
- - FireMonkey Animations powered [Login Form](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/src)
- - _[TAnimator](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AnimateFloat)_ from **FMX.Ani**
+ - **[Animations]**(https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AdditionalAnimations) to include in your project
+ - FireMonkey Animations powered **[Login Form]**(https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/src)
+ - _**[TAnimator]**(https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AnimateFloat)_ from **FMX.Ani**
  - **[ListOfMealsUIDemo](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/ListOfMealsUIDemo)** with custom styles
  - **[QuizAppTemplate](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/QuizAppTemplate)** for your Quiz Apps
 
