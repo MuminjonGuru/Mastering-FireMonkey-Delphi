@@ -11,6 +11,7 @@ I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free 
  - [**TAnimator**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AnimateFloat)_ from **FMX.Ani**
  - **[ListOfMealsUIDemo](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/ListOfMealsUIDemo)** with custom styles
  - **[QuizAppTemplate](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/QuizAppTemplate)** for your Quiz Apps
+ - **[Client Controller App](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/Client%20Controller%20Application%20Prototype)** for multi-purpose apps
 
     
 
