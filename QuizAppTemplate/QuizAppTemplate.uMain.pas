@@ -3,10 +3,27 @@ unit QuizAppTemplate.uMain;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
-  FMX.Layouts, FMX.Ani, FMX.TabControl, FMX.Controls.Presentation, FMX.Edit,
-  System.Actions, FMX.ActnList, FMX.Media, System.IOUtils, System.Threading;
+  System.SysUtils
+, System.Types
+, System.UITypes
+, System.Classes
+, System.Variants
+, FMX.Types
+, FMX.Controls
+, FMX.Forms
+, FMX.Graphics
+, FMX.Dialogs
+, FMX.Objects
+, FMX.Layouts
+, FMX.Ani
+, FMX.TabControl
+, FMX.Controls.Presentation
+, FMX.Edit
+, System.Actions
+, FMX.ActnList
+, FMX.Media
+, System.IOUtils
+, System.Threading;
 
 type
   TFrmMain = class(TForm)
