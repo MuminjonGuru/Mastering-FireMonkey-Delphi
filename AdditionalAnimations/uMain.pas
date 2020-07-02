@@ -3,11 +3,24 @@ unit uMain;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes,
-  System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Objects, FMX.Layouts, FMX.Controls.Presentation, FMX.Ani, FMX.TabControl,
-  System.Actions, FMX.ActnList;
+  System.SysUtils
+, System.Types
+, System.UITypes
+, System.Classes
+, System.Variants
+, FMX.Types
+, FMX.Controls
+, FMX.Forms
+, FMX.Graphics
+, FMX.Dialogs
+, FMX.StdCtrls
+, FMX.Objects
+, FMX.Layouts
+, FMX.Controls.Presentation
+, FMX.Ani
+, FMX.TabControl
+, System.Actions
+, FMX.ActnList;
 
 type
   TFrmMain = class(TForm)
