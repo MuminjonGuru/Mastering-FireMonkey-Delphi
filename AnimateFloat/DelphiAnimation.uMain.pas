@@ -3,10 +3,24 @@ unit DelphiAnimation.uMain;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Effects,
-  FMX.Objects, FMX.Layouts, FMX.ScrollBox, FMX.Memo, FMX.Controls.Presentation,
-  FMX.StdCtrls, FMX.Ani;
+  System.SysUtils
+, System.Types
+, System.UITypes
+, System.Classes
+, System.Variants
+, FMX.Types
+, FMX.Controls
+, FMX.Forms
+, FMX.Graphics
+, FMX.Dialogs
+, FMX.Effects
+, FMX.Objects
+, FMX.Layouts
+, FMX.ScrollBox
+, FMX.Memo
+, FMX.Controls.Presentation
+, FMX.StdCtrls
+, FMX.Ani;
 
 type
   TFormMain = class(TForm)
