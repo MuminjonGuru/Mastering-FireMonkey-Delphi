@@ -2,7 +2,7 @@
 ## Show some :heart: and Star the repo to support the project!
 
 ## Hello World! This is Muminjon
-I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free and you can also make contributions! 🔥[Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
+I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free, and you can also make contributions! 🔥[Delphi FireMonkey](https://www.embarcadero.com/products/delphi).
 
 ## Click the star button and follow me!
 
@@ -17,7 +17,7 @@ I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free 
 
 > New Projects Every Month 🎁
 
-What I have used? 
+What have I used? 
 
  - The TFloatAnimation component which gives you so many cool things that you can use for creating stunning animations without other resources.
  - Tab transition which lots of  new developer don’t use it. It is very simple, you just need to learn the TActionList component.
