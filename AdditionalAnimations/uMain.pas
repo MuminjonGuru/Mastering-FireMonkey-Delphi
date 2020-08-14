@@ -99,12 +99,10 @@ uses
   System.Threading;
 
 procedure TFrmMain.Btn1Click(Sender: TObject);
-var
-  Task: ITask;
 begin
   // Rct1 this is a Special Button.
   // We have to make it expand smoothly and then we can show the Details
-  Task := TTask.Create(
+  var Task: ITask := TTask.Create(
     procedure()
     begin
       Sleep(300);
@@ -119,7 +117,7 @@ begin
   else
   begin
     Layout2.Visible := False;
-    FloatAnimation2.Start;
+    FloatAnimation2.Start
   end;
 end;
 
@@ -172,7 +170,7 @@ begin
   else if RctToggle.Position.X = 50 then
   begin
     FloatAnimationBack.Start;
-    ColorAnimationBack.Start;
+    ColorAnimationBack.Start
   end;
 end;
 
