@@ -24,11 +24,11 @@ What have I used?
  - The TRectangle component. Why TRectangle not just TLayout or TPanel. Because the TRectangle is much more comfortable to use.
  - The System.Threading module that you can use it for creating multi-threaded applications.
  
-## Also there are some additional animations for your Delphi FireMonkey Project 
+## Also, there are some additional animations for your Delphi FireMonkey Project.
 
 Here you can see the demonstration of the Additional Animations: [src](https://photos.app.goo.gl/yDSLi9T9CxLbYXbj8)
 
-I'm on social networks: **Follow me buddy!**
+I'm on social networks: **Follow me, buddy!**
 - 📱[FaceBook](https://www.facebook.com/wwwdelphiuz/)
 - 🎟[Twitter](https://twitter.com/MuminjonGuru)
 - 🎫[Medium](https://medium.com/@muminjonguru)
