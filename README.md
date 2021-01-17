@@ -7,7 +7,7 @@ I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free,
 ## Click the star button and follow me!
 
  - [**Car Racing Game**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/Car%20Racing%20Game%20in%20Delphi) in Delphi FireMonkey
- - [**Send and Receive SMS in Delphi FireMonkey Android**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/Receive%20%26%20Send%20SMS%20-%20FMX%20Android
+ - [**Send and Receive SMS**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/Receive%20%26%20Send%20SMS%20-%20FMX%20Android) in Delphi FireMonkey Android
  - [**Animations**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AdditionalAnimations) to include in your project
  - FireMonkey Animations powered [**Login Form**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/src)
  - [**TAnimator**](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/AnimateFloat)_ from **FMX.Ani**
