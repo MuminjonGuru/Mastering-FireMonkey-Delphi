@@ -14,6 +14,7 @@ I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free,
  - **[ListOfMealsUIDemo](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/ListOfMealsUIDemo)** with custom styles
  - **[QuizAppTemplate](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/QuizAppTemplate)** for your Quiz Apps
  - **[Client Controller App](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/Client%20Controller%20Application%20Prototype)** for multi-purpose apps
+ - **[Validate & Verify Email IDs with RESTful service](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/MailboxLayer%20API%20Demo%20with%20Delphi)
 
     
 
