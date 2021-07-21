@@ -1,0 +1,78 @@
+object DataRectFrame: TDataRectFrame
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object BgRect: TRectangle
+    Align = Client
+    Fill.Color = x00FBFBFB
+    Sides = [Bottom]
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.200000002980232200
+    object ContactsGridPanel: TGridPanelLayout
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 240.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = DataCaptionLbl
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = DataValueLbl
+          Row = 1
+        end>
+      RowCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object DataCaptionLbl: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        HitTest = True
+        Size.Width = 320.000000000000000000
+        Size.Height = 120.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'default'
+        TextSettings.Font.Size = 34.000000000000000000
+        TextSettings.FontColor = xFF353535
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Trailing
+        Text = 'Caption'
+        TabOrder = 1
+        OnApplyStyleLookup = DataCaptionLblApplyStyleLookup
+      end
+      object DataValueLbl: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        HitTest = True
+        Size.Width = 320.000000000000000000
+        Size.Height = 120.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'default'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claGray
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Leading
+        Text = 'Value'
+        TabOrder = 0
+      end
+    end
+  end
+end

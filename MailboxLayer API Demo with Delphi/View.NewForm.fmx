@@ -1,0 +1,161 @@
+inherited NewFormFrame: TNewFormFrame
+  inherited MainLayout: TGridPanelLayout
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = EditAccKey
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = EditEmailID
+        Row = 2
+      end
+      item
+        Column = 0
+        Control = Memo1
+        Row = 3
+      end
+      item
+        Column = 0
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Panel1
+        Row = 4
+      end>
+    RowCollection = <
+      item
+        Value = 8.640269634528401000
+      end
+      item
+        Value = 12.613462187200560000
+      end
+      item
+        Value = 5.537280163372611000
+      end
+      item
+        Value = 30.401744576976900000
+      end
+      item
+        Value = 17.681834696618310000
+      end
+      item
+        Value = 25.125408741303230000
+      end>
+    inherited HeaderRect: TRectangle
+      Size.Height = 50.718383789062500000
+      inherited CaptionLbl: TLabel
+        Size.Height = 47.718383789062500000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'New Form'
+        inherited HamburgerImg: TPath
+          Size.Height = 30.718383789062500000
+          inherited HitBox: TLayout
+            Size.Height = 36.718383789062500000
+          end
+        end
+      end
+    end
+    object EditAccKey: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = []
+      TabOrder = 0
+      Position.X = 26.500000000000000000
+      Position.Y = 75.238891601562500000
+      Size.Width = 275.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'API Access Key'
+    end
+    object EditEmailID: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = []
+      TabOrder = 1
+      Position.X = 26.500000000000000000
+      Position.Y = 128.511322021484400000
+      Size.Width = 275.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Email ID'
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      TextSettings.WordWrap = True
+      Anchors = []
+      Position.X = 26.500000000000000000
+      Position.Y = 166.992370605468800000
+      Size.Width = 275.000000000000000000
+      Size.Height = 159.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 271.000000000000000000
+      Viewport.Height = 155.000000000000000000
+    end
+    object Panel1: TPanel
+      Anchors = []
+      Position.X = 27.500000000000000000
+      Position.Y = 337.617675781250000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object BtnSendRequest: TButton
+        Align = Top
+        Size.Width = 273.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Send Request'
+        OnClick = BtnSendRequestClick
+      end
+      object BtnParseValues: TButton
+        Align = Bottom
+        Position.Y = 50.000000000000000000
+        Size.Width = 273.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Parse Values'
+        OnClick = BtnSendRequestClick
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    Params = <>
+    Left = 256
+    Top = 96
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Left = 256
+    Top = 176
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 256
+    Top = 32
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 132
+    Top = 189
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTResponse1
+      FieldName = 'Content'
+      Control = Memo1
+      Track = False
+    end
+  end
+end

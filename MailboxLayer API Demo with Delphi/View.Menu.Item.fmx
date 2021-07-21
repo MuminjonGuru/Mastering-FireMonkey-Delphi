@@ -1,0 +1,54 @@
+object MenuItemFrame: TMenuItemFrame
+  Align = Center
+  HitTest = False
+  Size.Width = 244.000000000000000000
+  Size.Height = 44.000000000000000000
+  Size.PlatformDefault = False
+  object BgRect: TRectangle
+    Align = Client
+    Fill.Kind = None
+    HitTest = False
+    Sides = []
+    Size.Width = 244.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    object Layout: TLayout
+      Align = Top
+      Size.Width = 244.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      object imgArrrow: TPath
+        Align = Left
+        Data.Path = {
+          0700000000000000000020410000C04001000000A4700941B81EED4001000000
+          52B852410000404101000000A470094152B88441010000000000204100009041
+          01000000000080410000404103000000000020410000C040}
+        Fill.Color = xFF4F4F4F
+        HitTest = False
+        Margins.Left = 12.000000000000000000
+        Margins.Top = 14.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 12.000000000000000000
+        Position.X = 12.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 29.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        WrapMode = Fit
+      end
+      object lblCaption: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 198.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        Text = 'Caption'
+        TabOrder = 1
+        OnApplyStyleLookup = lblCaptionApplyStyleLookup
+      end
+    end
+  end
+end

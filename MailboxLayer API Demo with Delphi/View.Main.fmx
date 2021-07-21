@@ -1,0 +1,99 @@
+object MainFrame: TMainFrame
+  StyleName = 'AndroidLight'
+  Align = Client
+  Size.Width = 328.000000000000000000
+  Size.Height = 587.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object MainLayout: TGridPanelLayout
+    Align = Client
+    Size.Width = 328.000000000000000000
+    Size.Height = 587.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 100.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end>
+    RowCollection = <
+      item
+        Value = 6.537318864232710000
+      end
+      item
+        Value = 93.462681135767280000
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object HeaderRect: TRectangle
+      Align = Client
+      Anchors = []
+      Fill.Color = x0A000000
+      Sides = [Bottom]
+      Size.Width = 328.000000000000000000
+      Size.Height = 38.374061584472660000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.100000001490116100
+      object CaptionLbl: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Margins.Bottom = 3.000000000000000000
+        Size.Width = 328.000000000000000000
+        Size.Height = 35.374061584472660000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF676767
+        TextSettings.HorzAlign = Center
+        Text = 'Caption'
+        TabOrder = 0
+        OnApplyStyleLookup = CaptionLblApplyStyleLookup
+        object HamburgerImg: TPath
+          Align = Left
+          Data.Path = {
+            07000000000000005C8F7641B81EED4001000000000060410000C04001000000
+            0000004100004041010000000000604100009041010000005C8F764152B88441
+            01000000AE472D4100004041030000005C8F7641B81EED40}
+          Fill.Color = xFF282727
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 9.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.374061584472660000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          WrapMode = Fit
+          object HitBox: TLayout
+            Align = Client
+            HitTest = True
+            Margins.Left = -2.000000000000000000
+            Margins.Top = -3.000000000000000000
+            Margins.Right = -2.000000000000000000
+            Margins.Bottom = -3.000000000000000000
+            Size.Width = 32.000000000000000000
+            Size.Height = 24.374061584472660000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnClick = HitBoxClick
+          end
+        end
+      end
+      object MasterShadowEffect: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.600000023841857900
+        Opacity = 0.100000001490116100
+        ShadowColor = claBlack
+      end
+    end
+  end
+end

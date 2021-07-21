@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2C02BCE7-EA28-4F68-8A8C-6CEEC176A1BC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MailboxLayer API with Delphi FireMonkey_tests.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\MailboxLayerAPIwithDelphiFireMonkey.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MailboxLayer API with Delphi FireMonkey_tests">
+        <MSBuild Projects="MailboxLayer API with Delphi FireMonkey_tests.dproj"/>
+    </Target>
+    <Target Name="MailboxLayer API with Delphi FireMonkey_tests:Clean">
+        <MSBuild Projects="MailboxLayer API with Delphi FireMonkey_tests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MailboxLayer API with Delphi FireMonkey_tests:Make">
+        <MSBuild Projects="MailboxLayer API with Delphi FireMonkey_tests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MailboxLayerAPIwithDelphiFireMonkey">
+        <MSBuild Projects="..\MailboxLayerAPIwithDelphiFireMonkey.dproj"/>
+    </Target>
+    <Target Name="MailboxLayerAPIwithDelphiFireMonkey:Clean">
+        <MSBuild Projects="..\MailboxLayerAPIwithDelphiFireMonkey.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MailboxLayerAPIwithDelphiFireMonkey:Make">
+        <MSBuild Projects="..\MailboxLayerAPIwithDelphiFireMonkey.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MailboxLayer API with Delphi FireMonkey_tests;MailboxLayerAPIwithDelphiFireMonkey"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MailboxLayer API with Delphi FireMonkey_tests:Clean;MailboxLayerAPIwithDelphiFireMonkey:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MailboxLayer API with Delphi FireMonkey_tests:Make;MailboxLayerAPIwithDelphiFireMonkey:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
