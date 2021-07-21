@@ -1,1 +1,1 @@
-# Sign up now on mailboxlayer.com
+# Sign up now on [mailboxlayer.com](https://mailboxlayer.com/)
