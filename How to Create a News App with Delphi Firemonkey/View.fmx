@@ -1,0 +1,132 @@
+object ViewForm: TViewForm
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'MainForm'
+  ClientHeight = 624
+  ClientWidth = 367
+  Quality = HighQuality
+  SystemStatusBar.Visibility = Invisible
+  StyleBook = ViewStyleBook
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  OnSaveState = FormSaveState
+  DesignerMasterStyle = 0
+  object ViewStyleBook: TStyleBook
+    UseStyleManager = True
+    Styles = <
+      item
+      end>
+    Left = 248
+    Top = 232
+  end
+  object MultiView: TMultiView
+    Mode = Drawer
+    NavigationPaneOptions.CollapsedWidth = 250.000000000000000000
+    HitTest = False
+    Size.Width = 297.000000000000000000
+    Size.Height = 624.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    inline MenuFrame: TMenuFrame
+      StyleName = 'AndroidLight'
+      Align = Client
+      Margins.Top = -2.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 626.000000000000000000
+      Size.PlatformDefault = False
+      inherited MainLayout: TGridPanelLayout
+        Size.Width = 297.000000000000000000
+        Size.Height = 626.000000000000000000
+        ControlCollection = <
+          item
+            Column = 0
+            Control = MenuFrame.BgRect
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = MenuFrame.HeaderRect
+            Row = 0
+          end>
+        inherited HeaderRect: TRectangle
+          Size.Width = 297.000000000000000000
+          Size.Height = 40.923614501953130000
+          inherited CaptionLbl: TLabel
+            Size.Width = 297.000000000000000000
+            Size.Height = 37.923614501953130000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            inherited HamburgerImg: TPath
+              Size.Height = 20.923614501953130000
+              inherited HitBox: TLayout
+                Size.Height = 26.923614501953130000
+              end
+            end
+          end
+        end
+        inherited BgRect: TRectangle
+          Size.Width = 297.000000000000000000
+          Size.Height = 585.076416015625000000
+          inherited DataLayout: TGridPanelLayout
+            Size.Width = 297.000000000000000000
+            Size.Height = 585.076416015625000000
+            ControlCollection = <
+              item
+                Column = 0
+                Control = MenuFrame.UserInfoLayout
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = MenuFrame.VertScrollBox
+                Row = 2
+              end>
+            inherited UserInfoLayout: TGridPanelLayout
+              Size.Width = 297.000000000000000000
+              Size.Height = 177.562133789062500000
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = MenuFrame.UserImg
+                  Row = 0
+                end
+                item
+                  Column = 0
+                  Control = MenuFrame.lblUsername
+                  Row = 1
+                end>
+              inherited UserImg: TImage
+                Size.Width = 297.000000000000000000
+                Size.Height = 148.296112060546900000
+                inherited AccountSVG: TPath
+                  Size.Width = 297.000000000000000000
+                  Size.Height = 123.296112060546900000
+                end
+              end
+              inherited lblUsername: TLabel
+                Size.Width = 297.000000000000000000
+                Size.Height = 29.266021728515630000
+              end
+            end
+            inherited VertScrollBox: TVertScrollBox
+              Size.Width = 297.000000000000000000
+              Size.Height = 356.951080322265600000
+              Viewport.Width = 297.000000000000000000
+              Viewport.Height = 357.000000000000000000
+              inherited ListBox: TListBox
+                Size.Width = 297.000000000000000000
+                Size.Height = 355.433959960937500000
+                Viewport.Width = 297.000000000000000000
+                Viewport.Height = 355.400000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,33 @@
+inherited PlaceholderFrame: TPlaceholderFrame
+  inherited MainLayout: TGridPanelLayout
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = lblFormText
+        Row = 1
+      end>
+    inherited HeaderRect: TRectangle
+      inherited CaptionLbl: TLabel
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+      end
+    end
+    object lblFormText: TLabel
+      Align = Client
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Size.Width = 288.000000000000000000
+      Size.Height = 545.270263671875000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = xFF383838
+      TextSettings.VertAlign = Leading
+      TabOrder = 0
+    end
+  end
+end

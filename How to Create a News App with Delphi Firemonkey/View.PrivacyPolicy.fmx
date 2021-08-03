@@ -1,0 +1,20 @@
+inherited PrivacyPolicyFrame: TPrivacyPolicyFrame
+  inherited MainLayout: TGridPanelLayout
+    inherited HeaderRect: TRectangle
+      inherited CaptionLbl: TLabel
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Privacy Policy'
+      end
+    end
+    inherited lblFormText: TLabel
+      Text = 
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ' +
+        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut e' +
+        'nim ad minim veniam, quis nostrud exercitation ullamco laboris n' +
+        'isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in' +
+        ' reprehenderit in voluptate velit esse cillum dolore eu fugiat n' +
+        'ulla pariatur. Excepteur sint occaecat cupidatat non proident, s' +
+        'unt in culpa qui officia deserunt mollit anim id est laborum.'
+    end
+  end
+end

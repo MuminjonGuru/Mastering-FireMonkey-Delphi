@@ -1,0 +1,83 @@
+inherited ContactsListFrame: TContactsListFrame
+  Margins.Top = -2.000000000000000000
+  Size.Width = 334.000000000000000000
+  Size.Height = 1252.000000000000000000
+  inherited MainLayout: TGridPanelLayout
+    Size.Width = 334.000000000000000000
+    Size.Height = 1252.000000000000000000
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = VertScrollBox
+        Row = 1
+      end>
+    inherited HeaderRect: TRectangle
+      Size.Width = 334.000000000000000000
+      Size.Height = 81.847229003906250000
+      inherited CaptionLbl: TLabel
+        Size.Width = 334.000000000000000000
+        Size.Height = 78.847229003906250000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Contacts list'
+        inherited HamburgerImg: TPath
+          Size.Height = 61.847229003906250000
+          inherited HitBox: TLayout
+            Size.Height = 67.847229003906250000
+          end
+        end
+      end
+    end
+    object VertScrollBox: TVertScrollBox
+      Align = Client
+      Margins.Top = 1.000000000000000000
+      Size.Width = 334.000000000000000000
+      Size.Height = 1169.152832031250000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 334.000000000000000000
+      Viewport.Height = 1169.200000000000000000
+      object ContactsList: TListBox
+        Align = Client
+        Size.Width = 334.000000000000000000
+        Size.Height = 592.158447265625000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Visible = False
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 334.000000000000000000
+        Viewport.Height = 592.200000000000000000
+      end
+      object lblLoading: TLabel
+        Align = Center
+        StyledSettings = [Family, Style, FontColor]
+        Opacity = 0.400000005960464500
+        Size.Width = 303.000000000000000000
+        Size.Height = 72.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.FontColor = xFF070707
+        TextSettings.HorzAlign = Center
+        Text = 'Loading contacts...'
+        TabOrder = 1
+        object ProgressBar: TProgressBar
+          Align = Bottom
+          HitTest = False
+          Orientation = Horizontal
+          Margins.Bottom = 10.000000000000000000
+          Position.Y = 47.000000000000000000
+          Size.Width = 303.000000000000000000
+          Size.Height = 15.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+end

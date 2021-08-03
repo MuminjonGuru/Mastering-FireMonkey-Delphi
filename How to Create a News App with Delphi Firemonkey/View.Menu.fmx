@@ -1,0 +1,191 @@
+inherited MenuFrame: TMenuFrame
+  Margins.Top = -2.000000000000000000
+  Size.Width = 364.000000000000000000
+  Size.Height = 758.000000000000000000
+  inherited MainLayout: TGridPanelLayout
+    Size.Width = 364.000000000000000000
+    Size.Height = 758.000000000000000000
+    ControlCollection = <
+      item
+        Column = 0
+        Control = BgRect
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end>
+    inherited HeaderRect: TRectangle
+      Fill.Kind = None
+      Size.Width = 364.000000000000000000
+      Size.Height = 52.563869476318360000
+      inherited CaptionLbl: TLabel
+        Size.Width = 364.000000000000000000
+        Size.Height = 49.563869476318360000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = ' '
+        inherited HamburgerImg: TPath
+          Size.Height = 29.563869476318360000
+          inherited HitBox: TLayout
+            Size.Height = 33.563869476318360000
+          end
+        end
+      end
+    end
+    object BgRect: TRectangle
+      Align = Client
+      Fill.Kind = None
+      Sides = []
+      Size.Width = 364.000000000000000000
+      Size.Height = 705.436157226562500000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object DataLayout: TGridPanelLayout
+        Align = Client
+        Size.Width = 364.000000000000000000
+        Size.Height = 705.436157226562500000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = UserInfoLayout
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = VertScrollBox
+            Row = 2
+          end>
+        RowCollection = <
+          item
+            Value = 30.348537431804550000
+          end
+          item
+            Value = 8.642153479334937000
+          end
+          item
+            Value = 61.009309088860510000
+          end
+          item
+          end>
+        object UserInfoLayout: TGridPanelLayout
+          Align = Client
+          Size.Width = 364.000000000000000000
+          Size.Height = 214.089553833007800000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = UserImg
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = lblUsername
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 83.517874090477700000
+            end
+            item
+              Value = 16.482125909522300000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object UserImg: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Align = Client
+            Size.Width = 364.000000000000000000
+            Size.Height = 178.803039550781300000
+            Size.PlatformDefault = False
+            object AccountSVG: TPath
+              Align = Client
+              Data.Path = {
+                3600000000000000000040410000004002000000F21401412915F93F02000000
+                EBDA8840C4328F4002000000EC51324071BD0141020000008C6A9D3F48DC3A41
+                020000006E580240A8E880410200000026659840BA2F9741020000003F4DEC40
+                8CC3AD41020000005D453B41FC05B64102000000F92675416779AB4102000000
+                659298410B46A141020000005BB3AE41B3CF83410200000056E5AF41C53A4841
+                02000000B0E2B1415F9A0A41020000008A02A0411D109A4002000000FC688441
+                AD0C4640020000006F65724169EF1740020000007D3559416BB1FF3F02000000
+                000040410000004003000000000040410000004000000000000040410000A040
+                0200000042555D41D9EB9D4002000000D9E975412C58DA4002000000E2066F41
+                29B0094102000000081F6A419682264102000000F2D047410F79384102000000
+                854B2D41293C2C410200000015121241BBC92141020000000F1F07410183F940
+                02000000332F18410048CA4002000000E6E32041E118B04002000000E8443041
+                ADB89F4002000000000040410000A04003000000000040410000A04000000000
+                000040419A99994102000000BE0A1A4140C19941020000008188E94065B98F41
+                020000000000C04015AE7F4102000000B384C340B53B6A4102000000D15CF040
+                C4C75F4102000000DCE1094111DC584102000000FE8F2841953A4D4102000000
+                DCCE4A41CB084B4102000000B8406A411C04554102000000ACFB7D417E375B41
+                02000000724B8A41934663410200000072238F41721B774102000000A4C29041
+                AA198641020000003C54834103198D4102000000904277413E8A924102000000
+                A46A6641942C9741020000002F3853416B9D994102000000000040419A999941
+                03000000000040419A999941}
+              Fill.Color = xFFB7B7B7
+              Margins.Top = 15.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Size.Width = 364.000000000000000000
+              Size.Height = 153.803039550781300000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              WrapMode = Fit
+            end
+          end
+          object lblUsername: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 364.000000000000000000
+            Size.Height = 35.286514282226560000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = 'Username'
+            TabOrder = 1
+            OnApplyStyleLookup = lblUsernameApplyStyleLookup
+          end
+        end
+        object VertScrollBox: TVertScrollBox
+          Align = Client
+          Size.Width = 364.000000000000000000
+          Size.Height = 430.381713867187500000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ShowScrollBars = False
+          Viewport.Width = 364.000000000000000000
+          Viewport.Height = 430.400000000000000000
+          object ListBox: TListBox
+            Align = Client
+            Size.Width = 364.000000000000000000
+            Size.Height = 430.381713867187500000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ShowScrollBars = False
+            AlternatingRowBackground = True
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            Viewport.Width = 360.000000000000000000
+            Viewport.Height = 426.400000000000000000
+          end
+        end
+      end
+    end
+  end
+end

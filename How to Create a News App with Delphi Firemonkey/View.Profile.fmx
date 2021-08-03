@@ -1,0 +1,564 @@
+inherited ProfileFrame: TProfileFrame
+  Size.Width = 318.000000000000000000
+  Size.Height = 626.000000000000000000
+  inherited MainLayout: TGridPanelLayout
+    Size.Width = 318.000000000000000000
+    Size.Height = 626.000000000000000000
+    ControlCollection = <
+      item
+        Column = 0
+        Control = DataPanel
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end>
+    inherited HeaderRect: TRectangle
+      Size.Width = 318.000000000000000000
+      Size.Height = 40.923614501953130000
+      inherited CaptionLbl: TLabel
+        Size.Width = 318.000000000000000000
+        Size.Height = 37.923614501953130000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Profile'
+        inherited HamburgerImg: TPath
+          Size.Height = 20.923614501953130000
+          inherited HitBox: TLayout
+            Size.Height = 26.923614501953130000
+          end
+        end
+      end
+    end
+    object DataPanel: TGridPanelLayout
+      Align = Client
+      Size.Width = 318.000000000000000000
+      Size.Height = 585.076416015625000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = UserAddInfoPanel
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = UserInfoPanel
+          Row = 1
+        end>
+      RowCollection = <
+        item
+          Value = 43.672028904027310000
+        end
+        item
+          Value = 52.989064149680890000
+        end
+        item
+          Value = 3.338906946291806000
+        end>
+      object UserAddInfoPanel: TGridPanelLayout
+        Align = Client
+        Size.Width = 318.000000000000000000
+        Size.Height = 255.514739990234400000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = UsernameLbl
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = hitboxProfileSvg
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 74.999942779584670000
+          end
+          item
+            Value = 25.000057220415330000
+          end>
+        object UsernameLbl: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 318.000000000000000000
+          Size.Height = 63.878829956054690000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 22.000000000000000000
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Leading
+          Text = 'UserName'
+          TabOrder = 1
+        end
+        object OpenDialog: TOpenDialog
+          Filter = 'image/*'
+          Left = 256
+          Top = 96
+        end
+        object hitboxProfileSvg: TLayout
+          Align = Client
+          HitTest = True
+          Size.Width = 318.000000000000000000
+          Size.Height = 191.635910034179700000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          OnClick = ProfileSvgClick
+          object ProfileSvg: TPath
+            Align = HorzCenter
+            Data.Path = {
+              3600000000000000000040410000004002000000F21401412915F93F02000000
+              EBDA8840C4328F4002000000EC51324071BD0141020000008C6A9D3F48DC3A41
+              020000006E580240A8E880410200000026659840BA2F9741020000003F4DEC40
+              8CC3AD41020000005D453B41FC05B64102000000F92675416779AB4102000000
+              659298410B46A141020000005BB3AE41B3CF83410200000056E5AF41C53A4841
+              02000000B0E2B1415F9A0A41020000008A02A0411D109A4002000000FC688441
+              AD0C4640020000006F65724169EF1740020000007D3559416BB1FF3F02000000
+              000040410000004003000000000040410000004000000000000040410000A040
+              0200000042555D41D9EB9D4002000000D9E975412C58DA4002000000E2066F41
+              29B0094102000000081F6A419682264102000000F2D047410F79384102000000
+              854B2D41293C2C410200000015121241BBC92141020000000F1F07410183F940
+              02000000332F18410048CA4002000000E6E32041E118B04002000000E8443041
+              ADB89F4002000000000040410000A04003000000000040410000A04000000000
+              000040419A99994102000000BE0A1A4140C19941020000008188E94065B98F41
+              020000000000C04015AE7F4102000000B384C340B53B6A4102000000D15CF040
+              C4C75F4102000000DCE1094111DC584102000000FE8F2841953A4D4102000000
+              DCCE4A41CB084B4102000000B8406A411C04554102000000ACFB7D417E375B41
+              02000000724B8A41934663410200000072238F41721B774102000000A4C29041
+              AA198641020000003C54834103198D4102000000904277413E8A924102000000
+              A46A6641942C9741020000002F3853416B9D994102000000000040419A999941
+              03000000000040419A999941}
+            Fill.Color = xFFD4D4D4
+            Margins.Top = 30.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 318.000000000000000000
+            Size.Height = 151.635910034179700000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            Stroke.Thickness = 0.000000000000000000
+            WrapMode = Fit
+            OnClick = ProfileSvgClick
+            object ProfileEditSvg: TPath
+              Anchors = []
+              Data.Path = {
+                36000000000000000000404000008A4102000000000040400000944102000000
+                0000404000009E4102000000000040400000A84102000000000088400000A841
+                020000000000B0400000A841020000000000D8400000A8410200000097FC2641
+                B5818A41020000002CF96141D4065A4102000000E17A8E413D0A1F4102000000
+                E17A84413D0A0B4102000000C3F574417B14EE4002000000C3F560417B14C640
+                020000002CF92541D4061E41020000002CF9D540690359410200000000004040
+                00008A41030000000000404000008A4100000000A470BD400000984102000000
+                6DA0B340000098410200000037D0A94000009841020000000000A04000009841
+                02000000AED9A040BB7F9541020000007F599E40A0A6924102000000EF26A140
+                1B5A9041020000003BB400417393704102000000FFD43041AF72404102000000
+                C3F56041EC51104102000000DEDD6541073A154102000000F9C56A4122221A41
+                0200000014AE6F413D0A1F4102000000295C3F41295C4F41020000003D0A0F41
+                14AE7F4102000000A470BD400000984103000000A470BD400000984100000000
+                14AEA541F628B4400200000027FC9E41F8F59940020000009B90984176067D40
+                02000000A4B091418F424A40020000001C958C4178D02D4002000000B1838741
+                FDB64F400200000048398441BD356E4002000000EF7E80414304864002000000
+                2D897941A6ED9440020000007B1472410AD7A340020000003E0A83410AD7CB40
+                020000003E0A8D410AD7F340020000003E0A974185EB0D4102000000D43A9C41
+                A14403410200000005B6A1416D49F2400200000029B4A6411F45DC4002000000
+                97C9A8418B16D04002000000CD56A841FD67BE400200000014AEA541F628B440
+                0300000014AEA541F628B440}
+              Fill.Color = xFF979797
+              Margins.Left = 100.000000000000000000
+              Margins.Top = 140.000000000000000000
+              Position.X = 188.000000000000000000
+              Position.Y = 106.211364746093800000
+              Size.Width = 29.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              Stroke.Thickness = 0.000000000000000000
+              WrapMode = Fit
+              OnClick = ProfileSvgClick
+            end
+          end
+        end
+      end
+      object UserInfoPanel: TGridPanelLayout
+        Align = Client
+        Size.Width = 318.000000000000000000
+        Size.Height = 310.026519775390600000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = EmailPanel
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = GenderPanel
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = BirthdayPanel
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = SignOutBtn
+            Row = 3
+          end>
+        RowCollection = <
+          item
+            Value = 26.664489894191580000
+          end
+          item
+            Value = 26.662355374655200000
+          end
+          item
+            Value = 26.664620674388260000
+          end
+          item
+            Value = 20.008534056764960000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object EmailPanel: TGridPanelLayout
+          Align = Client
+          Size.Width = 318.000000000000000000
+          Size.Height = 82.666992187500000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 20.000122879811260000
+            end
+            item
+              Value = 79.999877120188740000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = EmailLbl
+              Row = 0
+            end
+            item
+              Column = 1
+              ColumnSpan = 2
+              Control = EmailEdit
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Line2
+              Row = 1
+            end
+            item
+              Column = 1
+              ColumnSpan = 2
+              Control = Line1
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object EmailLbl: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 15.000000000000000000
+            Size.Width = 48.600391387939450000
+            Size.Height = 82.666992187500000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = xFF888888
+            Text = 'Email'
+            TabOrder = 0
+          end
+          object EmailEdit: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 1
+            Position.X = 93.600387573242190000
+            Position.Y = 27.000000000000000000
+            Locked = True
+            Margins.Left = 30.000000000000000000
+            Margins.Right = 15.000000000000000000
+            Size.Width = 209.399612426757800000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Line2: TLine
+            Align = MostBottom
+            Anchors = []
+            LineType = Bottom
+            Margins.Left = -15.000000000000000000
+            Position.X = -15.000000000000000000
+            Position.Y = 81.666992187500000000
+            Size.Width = 78.600387573242190000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD9D9D9
+            Visible = False
+          end
+          object Line1: TLine
+            Align = MostBottom
+            Anchors = []
+            LineType = Bottom
+            Margins.Left = -15.000000000000000000
+            Position.X = 48.600391387939450000
+            Position.Y = 81.666992187500000000
+            Size.Width = 269.399597167968800000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD9D9D9
+            Visible = False
+          end
+        end
+        object GenderPanel: TGridPanelLayout
+          Align = Client
+          Size.Width = 318.000000000000000000
+          Size.Height = 82.660369873046880000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ColumnCollection = <
+            item
+              Value = 20.000122879811260000
+            end
+            item
+              Value = 79.999877120188740000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = GenderLbl
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Line3
+              Row = 2
+            end
+            item
+              Column = 1
+              Control = Line4
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = GenderComboBox
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object GenderLbl: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 15.000000000000000000
+            Margins.Right = -20.000000000000000000
+            Size.Width = 68.600387573242190000
+            Size.Height = 82.660369873046880000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = xFF888888
+            Text = 'Gender'
+            TabOrder = 0
+          end
+          object Line3: TLine
+            Align = MostBottom
+            Anchors = []
+            LineType = Bottom
+            Margins.Left = -15.000000000000000000
+            Position.X = -15.000000000000000000
+            Position.Y = 81.660369873046880000
+            Size.Width = 78.600387573242190000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD9D9D9
+            Visible = False
+          end
+          object Line4: TLine
+            Align = MostBottom
+            Anchors = []
+            LineType = Bottom
+            Margins.Left = -15.000000000000000000
+            Position.X = 48.600391387939450000
+            Position.Y = 81.660369873046880000
+            Size.Width = 269.399597167968800000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD9D9D9
+            Visible = False
+          end
+          object GenderComboBox: TComboBox
+            Align = VertCenter
+            Items.Strings = (
+              '-'
+              'Male'
+              'Female')
+            Margins.Left = 30.000000000000000000
+            Margins.Right = 15.000000000000000000
+            Position.X = 93.600387573242190000
+            Position.Y = 28.000000000000000000
+            Size.Width = 209.399597167968800000
+            Size.Height = 26.193504333496090000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+        object BirthdayPanel: TGridPanelLayout
+          Align = Client
+          Size.Width = 318.000000000000000000
+          Size.Height = 82.667388916015630000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          ColumnCollection = <
+            item
+              Value = 20.000122879811260000
+            end
+            item
+              Value = 79.999877120188740000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = BirthdyayLbl
+              Row = 0
+            end
+            item
+              Column = 1
+              ColumnSpan = 2
+              Control = BirthdayDateEdit
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Line5
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = Line6
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object BirthdyayLbl: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 15.000000000000000000
+            Margins.Right = -40.000000000000000000
+            Size.Width = 88.600387573242190000
+            Size.Height = 82.667388916015630000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = xFF888888
+            Text = 'Birthday'
+            TabOrder = 0
+          end
+          object BirthdayDateEdit: TDateEdit
+            Date = 44242.000000000000000000
+            DateFormatKind = Long
+            Align = VertCenter
+            KeyboardType = Default
+            Margins.Left = 30.000000000000000000
+            Margins.Right = 15.000000000000000000
+            Position.X = 93.600387573242190000
+            Position.Y = 27.000000000000000000
+            Size.Width = 209.399612426757800000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+          object Line5: TLine
+            Align = MostBottom
+            Anchors = []
+            LineType = Bottom
+            Margins.Left = -15.000000000000000000
+            Position.X = -15.000000000000000000
+            Position.Y = 81.667388916015630000
+            Size.Width = 78.600387573242190000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD9D9D9
+            Visible = False
+          end
+          object Line6: TLine
+            Align = MostBottom
+            Anchors = []
+            LineType = Bottom
+            Margins.Left = -15.000000000000000000
+            Position.X = 48.600391387939450000
+            Position.Y = 81.667388916015630000
+            Size.Width = 269.399597167968800000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD9D9D9
+            Visible = False
+          end
+        end
+        object SignOutBtn: TButton
+          Align = MostBottom
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 15.000000000000000000
+          Margins.Right = 15.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 269.026519775390600000
+          Size.Width = 288.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Sign Out'
+          TextSettings.Font.Size = 16.000000000000000000
+          OnClick = SignOutBtnClick
+          object SignOutHitBox: TLayout
+            Align = Client
+            HitTest = True
+            Size.Width = 258.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Visible = False
+            TabOrder = 0
+            OnClick = SignOutHitBoxClick
+          end
+        end
+      end
+    end
+  end
+end

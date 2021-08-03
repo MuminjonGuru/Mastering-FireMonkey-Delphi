@@ -1,0 +1,104 @@
+object SettingsItemFrame: TSettingsItemFrame
+  Size.Width = 335.000000000000000000
+  Size.Height = 69.000000000000000000
+  Size.PlatformDefault = False
+  object SettingsItemPanel: TGridPanelLayout
+    Align = Client
+    Size.Width = 335.000000000000000000
+    Size.Height = 68.800003051757810000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 38.418650208206260000
+      end
+      item
+        Value = 61.581349791793740000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = SettingsItemLbl
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Layout
+        Row = 0
+      end>
+    RowCollection = <
+      item
+        Value = 100.000000000000000000
+      end>
+    object SettingsItemLbl: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 10.000000000000000000
+      Size.Width = 118.702484130859400000
+      Size.Height = 68.800003051757810000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.FontColor = xFF7A7676
+      Text = 'SettingsItemLbl'
+      TabOrder = 0
+    end
+    object Layout: TLayout
+      Align = Client
+      Size.Width = 206.297515869140600000
+      Size.Height = 68.800003051757810000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object ValueComboBox: TComboBox
+        Align = Right
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Position.X = -32.702484130859380000
+        Position.Y = 20.000000000000000000
+        Size.Width = 219.000000000000000000
+        Size.Height = 28.800003051757810000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object ValueSwitch: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Position.X = 144.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 58.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Visible = False
+      end
+      object ValueEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+      end
+    end
+  end
+  object SeparatorLine: TLine
+    Align = MostBottom
+    LineType = Bottom
+    Opacity = 0.100000001490116100
+    Position.Y = 68.800003051757810000
+    Size.Width = 335.000000000000000000
+    Size.Height = 0.200000002980232200
+    Size.PlatformDefault = False
+    Stroke.Color = xFF3C3C3C
+  end
+end

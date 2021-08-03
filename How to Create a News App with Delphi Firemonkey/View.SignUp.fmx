@@ -1,0 +1,623 @@
+object SignUpFrame: TSignUpFrame
+  Align = Client
+  Size.Width = 323.000000000000000000
+  Size.Height = 599.000000000000000000
+  Size.PlatformDefault = False
+  object OpenDialog: TOpenDialog
+    Filter = 'image/*'
+    Left = 256
+    Top = 32
+  end
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 323.000000000000000000
+    Size.Height = 599.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 323.000000000000000000
+    Viewport.Height = 599.000000000000000000
+    object MainGridPanelLayout: TGridPanelLayout
+      Align = Client
+      Size.Width = 323.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = GridPanelEdits
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = GridPanelAdds
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = hitboxAccountSVG
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 32.590606092279880000
+        end
+        item
+          Value = 35.660031390396600000
+        end
+        item
+          Value = 31.749362517323520000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object GridPanelEdits: TGridPanelLayout
+        Align = Client
+        Size.Width = 323.000000000000000000
+        Size.Height = 213.603591918945300000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = FirstnameEdit
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = LastnameEdit
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = EmailEdit
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = PassEdit
+            Row = 3
+          end
+          item
+            Column = 0
+            Control = ConfPassEdit
+            Row = 4
+          end>
+        RowCollection = <
+          item
+            Value = 22.276222660043850000
+          end
+          item
+            Value = 19.670144741503850000
+          end
+          item
+            Value = 18.896956200001150000
+          end
+          item
+            Value = 19.299939013061780000
+          end
+          item
+            Value = 19.856737385389380000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object FirstnameEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight, akBottom]
+          TabOrder = 0
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 27.780029296875000000
+          Size.PlatformDefault = False
+          OnTyping = FirstnameEditTyping
+          object EmailHiddenLbl: TLabel
+            Align = Left
+            Enabled = False
+            Opacity = 0.500000000000000000
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 27.780029296875000000
+            Size.PlatformDefault = False
+            Text = 'First Name'
+            TabOrder = 0
+          end
+        end
+        object LastnameEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight, akBottom]
+          TabOrder = 1
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 27.770919799804690000
+          Size.PlatformDefault = False
+          OnTyping = FirstnameEditTyping
+          object PassHiddenLbl: TLabel
+            Align = Left
+            Enabled = False
+            Opacity = 0.500000000000000000
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 188.000000000000000000
+            Size.Height = 27.770919799804690000
+            Size.PlatformDefault = False
+            Text = 'Last Name'
+            TabOrder = 1
+          end
+        end
+        object EmailEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight, akBottom]
+          TabOrder = 2
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          OnTyping = FirstnameEditTyping
+          object Label2: TLabel
+            Align = Left
+            Enabled = False
+            Opacity = 0.500000000000000000
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 188.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Email'
+            TabOrder = 0
+          end
+        end
+        object PassEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight, akBottom]
+          TabOrder = 3
+          Password = True
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          OnTyping = FirstnameEditTyping
+          object ShowPassImg: TImage
+            MultiResBitmap.Height = 18
+            MultiResBitmap.Width = 18
+            MultiResBitmap = <
+              item
+                Width = 18
+                Height = 18
+                PNG = {
+                  89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+                  57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  011B49444154384FE5D3214FC3501486E18E2026104824721281038143209013
+                  C80904821F80982199214132814720100832BDFD05B225207023C19020580209
+                  7BDFAE3739EBD6040D5FF26CEB697B7BEFB95DF677532BBE97651B3B58C70423
+                  3CE219BF4A1343FC54B8C31E2AB3865BC49B6E7082533C14B5A48D85ACE21EE9
+                  A22FECC3F880FAEC67D6421CEC12733943BCE00AC6A77EE00DC71648796647C8
+                  B3814FC49387B0EECC52CDC19C99CB8CD78E515FF1032E2DE61BE5BAC7720763
+                  F2BA03BDA06B256417D6AFF3A3D9C017784779C7CE613D8FA3F691A6EB52B760
+                  36E1328D1B1097E5ABB010772736D2C13A38803D730362CFDC65EF591A7B6233
+                  9F906E28B3B9BE0673A9FA8B38A0CB68143C7EC5003DD8B3FF912C9B0239C35C
+                  7994733C420000000049454E44AE426082}
+                FileName = 
+                  'G:\Softacom\Embracadero\FMXWZRD\TemplateApp\Res\Img\remove_red_e' +
+                  'ye-black-18dp\1x\baseline_remove_red_eye_black_18dp.png'
+              end>
+            Align = Right
+            Opacity = 0.100000001490116100
+            Position.X = 211.000000000000000000
+            Size.Width = 32.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Center
+            OnClick = ShowPassImgClick
+          end
+          object PassLbl: TLabel
+            Align = Left
+            Enabled = False
+            Opacity = 0.500000000000000000
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 188.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Password'
+            TabOrder = 1
+          end
+        end
+        object ConfPassEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight, akBottom]
+          TabOrder = 4
+          Password = True
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          OnTyping = FirstnameEditTyping
+          object ShowConfPassImg: TImage
+            MultiResBitmap.Height = 18
+            MultiResBitmap.Width = 18
+            MultiResBitmap = <
+              item
+                Width = 18
+                Height = 18
+                PNG = {
+                  89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+                  57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  011B49444154384FE5D3214FC3501486E18E2026104824721281038143209013
+                  C80904821F80982199214132814720100832BDFD05B225207023C19020580209
+                  7BDFAE3739EBD6040D5FF26CEB697B7BEFB95DF677532BBE97651B3B58C70423
+                  3CE219BF4A1343FC54B8C31E2AB3865BC49B6E7082533C14B5A48D85ACE21EE9
+                  A22FECC3F880FAEC67D6421CEC12733943BCE00AC6A77EE00DC71648796647C8
+                  B3814FC49387B0EECC52CDC19C99CB8CD78E515FF1032E2DE61BE5BAC7720763
+                  F2BA03BDA06B256417D6AFF3A3D9C017784779C7CE613D8FA3F691A6EB52B760
+                  36E1328D1B1097E5ABB010772736D2C13A38803D730362CFDC65EF591A7B6233
+                  9F906E28B3B9BE0673A9FA8B38A0CB68143C7EC5003DD8B3FF912C9B0239C35C
+                  7994733C420000000049454E44AE426082}
+                FileName = 
+                  'G:\Softacom\Embracadero\FMXWZRD\TemplateApp\Res\Img\remove_red_e' +
+                  'ye-black-18dp\1x\baseline_remove_red_eye_black_18dp.png'
+              end>
+            Align = Right
+            Opacity = 0.100000001490116100
+            Position.X = 211.000000000000000000
+            Size.Width = 32.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Center
+            OnClick = ShowPassImgClick
+          end
+          object ConfPassLbl: TLabel
+            Align = Left
+            Enabled = False
+            Opacity = 0.500000000000000000
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 236.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Confirm Password'
+            TabOrder = 1
+          end
+          object svgPassNotEqal: TPath
+            Align = MostRight
+            Data.Path = {
+              1A00000000000000000040410000004002000000295CCF400000004002000000
+              00000040295CCF400200000000000040000040410200000000000040F6288C41
+              02000000295CCF400000B04102000000000040410000B04102000000F6288C41
+              0000B041020000000000B041F6288C41020000000000B0410000404102000000
+              0000B041285CCF4002000000F6288C4100000040020000000000404100000040
+              0300000000004041000000400000000000005041000088410100000000003041
+              0000884101000000000030410000704101000000000050410000704101000000
+              0000504100008841030000000000504100008841000000000000504100005041
+              01000000000030410000504101000000000030410000E0400100000000005041
+              0000E040010000000000504100005041030000000000504100005041}
+            Fill.Color = xFFE2004E
+            Hint = 'The password confirmation does not match'
+            Margins.Left = 5.000000000000000000
+            Margins.Right = -20.000000000000000000
+            Position.X = 248.000000000000000000
+            Size.Width = 15.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            Visible = False
+            WrapMode = Fit
+            ParentShowHint = False
+            ShowHint = True
+            OnClick = svgPassNotEqalClick
+          end
+        end
+      end
+      object GridPanelAdds: TGridPanelLayout
+        Align = Client
+        Size.Width = 323.000000000000000000
+        Size.Height = 190.178680419921900000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = btnSignUp
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = pnlSignIn
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = pnlTermsOfUSeAndPrivacy
+            Row = 3
+          end>
+        RowCollection = <
+          item
+            Value = 12.454198842504550000
+          end
+          item
+            Value = 27.055178827485190000
+          end
+          item
+            Value = 25.696155099835400000
+          end
+          item
+            Value = 21.434554465975480000
+          end
+          item
+            Value = 13.359912764199370000
+          end>
+        object btnSignUp: TButton
+          Align = Top
+          Margins.Left = 40.000000000000000000
+          Margins.Right = 40.000000000000000000
+          Margins.Bottom = 40.000000000000000000
+          Position.X = 40.000000000000000000
+          Position.Y = 23.685230255126950000
+          Size.Width = 243.000000000000000000
+          Size.Height = 49.999996185302730000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Sign Up'
+          OnClick = btnSignUpClick
+        end
+        object pnlSignIn: TLayout
+          Align = Center
+          Size.Width = 320.000000000000000000
+          Size.Height = 46.502685546875000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object GridPanelLayout1: TGridPanelLayout
+            Align = MostRight
+            Size.Width = 320.000000000000000000
+            Size.Height = 46.502685546875000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            ColumnCollection = <
+              item
+                Value = 46.431819190847910000
+              end
+              item
+                Value = 53.568180809152080000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = lblSignIn1
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = lblSignIn2
+                Row = 0
+              end>
+            RowCollection = <
+              item
+                Value = 100.000000000000000000
+              end>
+            object lblSignIn1: TLabel
+              Align = Client
+              HitTest = True
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 3.000000000000000000
+              Size.Width = 145.581817626953100000
+              Size.Height = 41.502685546875000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              TextSettings.VertAlign = Leading
+              Text = 'or'
+              TabOrder = 3
+              OnClick = lblSignIn1Click
+            end
+            object lblSignIn2: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              HitTest = True
+              Margins.Top = 5.000000000000000000
+              Size.Width = 171.418182373046900000
+              Size.Height = 41.502685546875000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.VertAlign = Leading
+              Text = 'Login'
+              TabOrder = 2
+              OnApplyStyleLookup = lblSignIn2ApplyStyleLookup
+              OnClick = lblSignIn1Click
+            end
+          end
+        end
+        object pnlTermsOfUSeAndPrivacy: TLayout
+          Align = Center
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 280.000000000000000000
+          Size.Height = 38.790412902832030000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object grdTermsOfUSeAndPrivacy: TGridPanelLayout
+            Align = Client
+            Size.Width = 280.000000000000000000
+            Size.Height = 38.790412902832030000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            ColumnCollection = <
+              item
+                Value = 44.245824307318900000
+              end
+              item
+                Value = 23.236930775702220000
+              end
+              item
+                Value = 7.425831522259475000
+              end
+              item
+                Value = 25.091413394719410000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = lblTermsAndPolicy1
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = lblTermsOfUse
+                Row = 0
+              end
+              item
+                Column = 2
+                Control = lblTermsAndPolicy2
+                Row = 0
+              end
+              item
+                Column = 3
+                Control = lblPrivacyPolicy
+                Row = 0
+              end>
+            RowCollection = <
+              item
+                Value = 100.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object lblTermsAndPolicy1: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 123.888305664062500000
+              Size.Height = 38.790412902832030000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 10.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = 'By registering, I accept the '
+              TabOrder = 0
+            end
+            object lblTermsOfUse: TLabel
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              HitTest = True
+              Size.Width = 65.063415527343750000
+              Size.Height = 38.790412902832030000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 10.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Terms of Use'
+              TabOrder = 1
+              OnClick = lblClick
+            end
+            object lblTermsAndPolicy2: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 20.792327880859380000
+              Size.Height = 38.790412902832030000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 10.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = 'and'
+              TabOrder = 2
+            end
+            object lblPrivacyPolicy: TLabel
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              HitTest = True
+              Size.Width = 70.255950927734380000
+              Size.Height = 38.790412902832030000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 10.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Privacy policy'
+              TabOrder = 3
+              OnClick = lblClick
+            end
+          end
+        end
+      end
+      object hitboxAccountSVG: TLayout
+        Align = Client
+        HitTest = True
+        Size.Width = 323.000000000000000000
+        Size.Height = 195.217727661132800000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        OnClick = AccountSVGClick
+        object AccountSVG: TPath
+          Align = Client
+          Data.Path = {
+            3600000000000000000040410000004002000000F21401412915F93F02000000
+            EBDA8840C4328F4002000000EC51324071BD0141020000008C6A9D3F48DC3A41
+            020000006E580240A8E880410200000026659840BA2F9741020000003F4DEC40
+            8CC3AD41020000005D453B41FC05B64102000000F92675416779AB4102000000
+            659298410B46A141020000005BB3AE41B3CF83410200000056E5AF41C53A4841
+            02000000B0E2B1415F9A0A41020000008A02A0411D109A4002000000FC688441
+            AD0C4640020000006F65724169EF1740020000007D3559416BB1FF3F02000000
+            000040410000004003000000000040410000004000000000000040410000A040
+            0200000042555D41D9EB9D4002000000D9E975412C58DA4002000000E2066F41
+            29B0094102000000081F6A419682264102000000F2D047410F79384102000000
+            854B2D41293C2C410200000015121241BBC92141020000000F1F07410183F940
+            02000000332F18410048CA4002000000E6E32041E118B04002000000E8443041
+            ADB89F4002000000000040410000A04003000000000040410000A04000000000
+            000040419A99994102000000BE0A1A4140C19941020000008188E94065B98F41
+            020000000000C04015AE7F4102000000B384C340B53B6A4102000000D15CF040
+            C4C75F4102000000DCE1094111DC584102000000FE8F2841953A4D4102000000
+            DCCE4A41CB084B4102000000B8406A411C04554102000000ACFB7D417E375B41
+            02000000724B8A41934663410200000072238F41721B774102000000A4C29041
+            AA198641020000003C54834103198D4102000000904277413E8A924102000000
+            A46A6641942C9741020000002F3853416B9D994102000000000040419A999941
+            03000000000040419A999941}
+          Fill.Color = xFFB7B7B7
+          Margins.Top = 15.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 323.000000000000000000
+          Size.Height = 170.217727661132800000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          WrapMode = Fit
+          OnClick = AccountSVGClick
+          object HitsBypassLayout: TLayout
+            Align = Right
+            HitTest = True
+            Position.X = 248.000000000000000000
+            Size.Width = 75.000000000000000000
+            Size.Height = 170.217727661132800000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

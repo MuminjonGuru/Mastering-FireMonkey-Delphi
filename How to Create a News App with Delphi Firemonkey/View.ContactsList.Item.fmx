@@ -1,0 +1,164 @@
+object ContactListItemFrame: TContactListItemFrame
+  Align = Top
+  HitTest = False
+  Size.Width = 473.000000000000000000
+  Size.Height = 76.000000000000000000
+  Size.PlatformDefault = False
+  object BgRect: TRectangle
+    Align = Client
+    Fill.Kind = None
+    HitTest = False
+    Sides = [Bottom]
+    Size.Width = 473.000000000000000000
+    Size.Height = 76.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.300000011920929000
+    object ContactInfoPanel: TGridPanelLayout
+      Align = Client
+      HitTest = False
+      Size.Width = 473.000000000000000000
+      Size.Height = 76.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 19.196608240112180000
+        end
+        item
+          Value = 67.270190489913970000
+        end
+        item
+          Value = 13.533201269973850000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = imgUserpic
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = UserInfoPanel
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = imgEditContact
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object imgUserpic: TImage
+        MultiResBitmap.Height = 1024
+        MultiResBitmap.Width = 1023
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        HitTest = False
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 90.799957275390630000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        object UserpicGlowEffect: TGlowEffect
+          Softness = 0.300000011920929000
+          GlowColor = claBlack
+          Opacity = 0.200000002980232200
+        end
+      end
+      object UserInfoPanel: TGridPanelLayout
+        Align = Client
+        HitTest = False
+        Size.Width = 318.187988281250000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = lblUsername
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = lblPhone
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object lblUsername: TLabel
+          Align = Bottom
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 318.187988281250000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 22.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'User Name'
+          TabOrder = 0
+        end
+        object lblPhone: TLabel
+          Align = Top
+          Anchors = []
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = 38.000000000000000000
+          Size.Width = 318.187988281250000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = xFF828282
+          TextSettings.HorzAlign = Center
+          Text = '123-456-789'
+          TabOrder = 1
+        end
+      end
+      object imgEditContact: TPath
+        Align = Center
+        Data.Path = {
+          25000000000000000000F74300008043020000000000F74333B3C14302000000
+          33B3C1430000F74302000000000080430000F743020000003433F9420000F743
+          020000000000904133B3C1430200000000009041000080430200000000009041
+          3433F942020000003333F9420000904102000000000080430000904102000000
+          33B3C14300009041020000000000F7433333F942020000000000F74300008043
+          030000000000F743000080430000000066E60E430080A4430100000066E60943
+          0000BB430100000066E636430080B843010000003373A3430000614301000000
+          33738F43000039430100000066E60E430080A4430300000066E60E430080A443
+          00000000CD8CA84300000A43020000000000A74300000A43020000003373A543
+          33330B43020000000040A4439A990D430100000033F399430000244301000000
+          33F3AD4300004C43010000000040B943008037430200000066A6BB4333B33243
+          0200000066A6BB4300002B43020000000040B943CD4C26430100000066E6AC43
+          9A990D43020000009A99AB4333330B4302000000CD0CAA4300000A4302000000
+          CD8CA84300000A4301000000CD8CA84300000A4303000000CD8CA84300000A43}
+        Fill.Color = xFF81C400
+        HitTest = False
+        Size.Width = 24.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Visible = False
+        WrapMode = Fit
+        object GlowEffect: TGlowEffect
+          Softness = 0.300000011920929000
+          GlowColor = claBlack
+          Opacity = 0.200000002980232200
+        end
+      end
+    end
+  end
+end

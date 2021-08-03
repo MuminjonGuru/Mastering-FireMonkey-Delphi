@@ -1,0 +1,93 @@
+inherited NewFormFrame: TNewFormFrame
+  Size.Width = 399.000000000000000000
+  Size.Height = 741.000000000000000000
+  inherited MainLayout: TGridPanelLayout
+    Size.Width = 399.000000000000000000
+    Size.Height = 741.000000000000000000
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = vrtscrlbx1
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 6.537318864232711000
+      end
+      item
+        Value = 93.462681135767280000
+      end>
+    inherited HeaderRect: TRectangle
+      Size.Width = 399.000000000000000000
+      Size.Height = 48.441532135009770000
+      inherited CaptionLbl: TLabel
+        Size.Width = 399.000000000000000000
+        Size.Height = 45.441532135009770000
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'News with MediaStack API'
+        inherited HamburgerImg: TPath
+          Size.Height = 28.441532135009770000
+          inherited HitBox: TLayout
+            Size.Height = 34.441532135009770000
+          end
+        end
+        object BtnRefresh: TButton
+          Align = MostRight
+          Position.X = 344.000000000000000000
+          Size.Width = 55.000000000000000000
+          Size.Height = 45.441532135009770000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbuttonbordered'
+          TabOrder = 3
+          Text = 'BtnRefresh'
+          OnClick = BtnRefreshClick
+        end
+      end
+    end
+    object vrtscrlbx1: TVertScrollBox
+      Align = Client
+      Size.Width = 399.000000000000000000
+      Size.Height = 692.558471679687500000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 399.000000000000000000
+      Viewport.Height = 692.600000000000000000
+    end
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'http://api.mediastack.com/v1/news'
+    Params = <>
+    Left = 56
+    Top = 536
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <
+      item
+        Name = 'access_key'
+        Value = '74205e4b991ff05cfbfbc08039560955'
+      end
+      item
+        Name = 'countries'
+        Value = 'gb'
+      end
+      item
+        Name = 'limit'
+        Value = '5'
+      end>
+    Response = RESTResponse1
+    Left = 160
+    Top = 536
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 264
+    Top = 536
+  end
+end

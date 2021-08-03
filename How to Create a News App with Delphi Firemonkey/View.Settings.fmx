@@ -1,0 +1,444 @@
+inherited SettingsFrame: TSettingsFrame
+  Margins.Top = -2.000000000000000000
+  Size.Width = 336.000000000000000000
+  Size.Height = 726.000000000000000000
+  inherited MainLayout: TGridPanelLayout
+    Size.Width = 336.000000000000000000
+    Size.Height = 726.000000000000000000
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = VertScrollBox
+        Row = 1
+      end>
+    inherited HeaderRect: TRectangle
+      Size.Width = 336.000000000000000000
+      Size.Height = 50.344814300537110000
+      inherited CaptionLbl: TLabel
+        Size.Width = 336.000000000000000000
+        Size.Height = 47.344814300537110000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Settings'
+        inherited HamburgerImg: TPath
+          Size.Height = 23.344814300537110000
+          inherited HitBox: TLayout
+            Size.Height = 29.344814300537110000
+          end
+        end
+      end
+    end
+    object VertScrollBox: TVertScrollBox
+      Align = Client
+      Size.Width = 336.000000000000000000
+      Size.Height = 675.655212402343800000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 336.000000000000000000
+      Viewport.Height = 675.700000000000000000
+      inline ThemeSettingsFrame: TSettingsItemFrame
+        Align = MostTop
+        Size.Width = 336.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        inherited SettingsItemPanel: TGridPanelLayout
+          Size.Width = 336.000000000000000000
+          Size.Height = 69.800003051757810000
+          ControlCollection = <
+            item
+              Column = 0
+              Control = ThemeSettingsFrame.SettingsItemLbl
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = ThemeSettingsFrame.Layout
+              Row = 0
+            end>
+          inherited SettingsItemLbl: TLabel
+            Size.Width = 119.086669921875000000
+            Size.Height = 69.800003051757810000
+            Text = 'Theme'
+          end
+          inherited Layout: TLayout
+            Size.Width = 206.913330078125000000
+            Size.Height = 69.800003051757810000
+            inherited ValueComboBox: TComboBox
+              Items.Strings = (
+                'None'
+                'Light'
+                'Dark')
+              Position.X = -32.086669921875000000
+              Size.Height = 29.800003051757810000
+              OnChange = ThemeSettingsFrameValueComboBoxChange
+            end
+          end
+        end
+        inherited SeparatorLine: TLine
+          Margins.Left = -20.000000000000000000
+          Margins.Right = -20.000000000000000000
+          Position.X = -20.000000000000000000
+          Position.Y = 69.800003051757810000
+          Size.Width = 376.000000000000000000
+          Size.Height = 0.199996948242187500
+        end
+      end
+      inline TZSettingsFrame: TSettingsItemFrame
+        Align = Top
+        Position.Y = 70.000000000000000000
+        Size.Width = 336.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        inherited SettingsItemPanel: TGridPanelLayout
+          Size.Width = 336.000000000000000000
+          Size.Height = 69.800003051757810000
+          ControlCollection = <
+            item
+              Column = 0
+              Control = TZSettingsFrame.SettingsItemLbl
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = TZSettingsFrame.Layout
+              Row = 0
+            end>
+          inherited SettingsItemLbl: TLabel
+            Size.Width = 119.086669921875000000
+            Size.Height = 69.800003051757810000
+            Text = 'Time Zone'
+          end
+          inherited Layout: TLayout
+            Size.Width = 206.913330078125000000
+            Size.Height = 69.800003051757810000
+            inherited ValueComboBox: TComboBox
+              Items.Strings = (
+                'GMT'#9'Greenwich Mean Time'#9'UTC'
+                'IBST'#9'International Business Standard Time'#9'UTC'
+                'WET'#9'Western European Time'#9'UTC'
+                'Z'#9'Zulu Time (Coordinated Universal Time)'#9'UTC'
+                'EGST'#9'Eastern Greenland Summer Time'#9'UTC+00'
+                'BST'#9'British Summer Time'#9'UTC+01'
+                'CET'#9'Central European Time'#9'UTC+01'
+                'DFT'#9'AIX specific equivalent of Central European Time'#9'UTC+01'
+                'IST'#9'Irish Standard Time'#9'UTC+01'
+                'MET'#9'Middle European Time Same zone as CET'#9'UTC+01'
+                'WAT'#9'West Africa Time'#9'UTC+01'
+                'WEDT'#9'Western European Daylight Time'#9'UTC+01'
+                'WEST'#9'Western European Summer Time'#9'UTC+01'
+                'CAT'#9'Central Africa Time'#9'UTC+02'
+                'CEDT'#9'Central European Daylight Time'#9'UTC+02'
+                'CEST'#9'Central European Summer Time'#9'UTC+02'
+                'EET'#9'Eastern European Time'#9'UTC+02'
+                
+                  'HAEC'#9'Heure Avanc'#233'e d'#39'Europe Centrale francised name for CEST'#9'UTC' +
+                  '+02'
+                'IST Israel'#9'Israel Standard Time'#9'UTC+02'
+                'MEST'#9'Middle European Summer Time Same zone as CEST'#9'UTC+02'
+                'SAST'#9'South African Standard Time'#9'UTC+02'
+                'USZ1'#9'Kaliningrad Time'#9'UTC+02'
+                'WAST'#9'West Africa Summer Time'#9'UTC+02'
+                'AST Arabia'#9'Arabia Standard Time'#9'UTC+03'
+                'EAT'#9'East Africa Time'#9'UTC+03'
+                'EEDT'#9'Eastern European Daylight Time'#9'UTC+03'
+                'EEST'#9'Eastern European Summer Time'#9'UTC+03'
+                'FET'#9'Further-eastern European Time'#9'UTC+03'
+                'IDT'#9'Israel Daylight Time'#9'UTC+03'
+                'IOT'#9'Indian Ocean Time'#9'UTC+03'
+                'MSK'#9'Moscow Time'#9'UTC+03'
+                'SYOT'#9'Showa Station Time'#9'UTC+03'
+                'IRST'#9'Iran Standard Time'#9'UTC+03:30'
+                'AMT Armenia'#9'Armenia Time'#9'UTC+04'
+                'AZT'#9'Azerbaijan Time'#9'UTC+04'
+                'GET'#9'Georgia Standard Time'#9'UTC+04'
+                'GST Gulf'#9'Gulf Standard Time'#9'UTC+04'
+                'MUT'#9'Mauritius Time'#9'UTC+04'
+                'RET'#9'R'#233'union Time'#9'UTC+04'
+                'SAMT'#9'Samara Time'#9'UTC+04'
+                'SCT'#9'Seychelles Time'#9'UTC+04'
+                'VOLT'#9'Volgograd Time'#9'UTC+04'
+                'AFT'#9'Afghanistan Time'#9'UTC+04:30'
+                'IRDT'#9'Iran Daylight Time'#9'UTC+04:30'
+                'HMT'#9'Heard and McDonald Islands Time'#9'UTC+05'
+                'MAWT'#9'Mawson Station Time'#9'UTC+05'
+                'MVT'#9'Maldives Time'#9'UTC+05'
+                'ORAT'#9'Oral Time'#9'UTC+05'
+                'PKT'#9'Pakistan Standard Time'#9'UTC+05'
+                'TFT'#9'Indian/Kerguelen'#9'UTC+05'
+                'TJT'#9'Tajikistan Time'#9'UTC+05'
+                'TMT'#9'Turkmenistan Time'#9'UTC+05'
+                'UZT'#9'Uzbekistan Time'#9'UTC+05'
+                'YEKT'#9'Yekaterinburg Time'#9'UTC+05'
+                'IST Indian'#9'Indian Standard Time'#9'UTC+05:30'
+                'SLST'#9'Sri Lanka Standard Time'#9'UTC+05:30'
+                'NPT'#9'Nepal Time'#9'UTC+05:45'
+                'BDT Bangladesh'#9'Bangladesh Daylight Time'#9'UTC+06'
+                'BIOT'#9'British Indian Ocean Time'#9'UTC+06'
+                'BST Bangladesh'#9'Bangladesh Standard Time'#9'UTC+06'
+                'BTT'#9'Bhutan Time'#9'UTC+06'
+                'KGT'#9'Kyrgyzstan time'#9'UTC+06'
+                'OMST'#9'Omsk Time'#9'UTC+06'
+                'VOST'#9'Vostok Station Time'#9'UTC+06'
+                'CCT'#9'Cocos Islands Time'#9'UTC+06:30'
+                'MMT'#9'Myanmar Time'#9'UTC+06:30'
+                'MST Myanmar'#9'Myanmar Standard Time'#9'UTC+06:30'
+                'CXT'#9'Christmas Island Time'#9'UTC+07'
+                'DAVT'#9'Davis Time'#9'UTC+07'
+                'HOVT'#9'Khovd Time'#9'UTC+07'
+                'ICT'#9'Indochina Time'#9'UTC+07'
+                'KRAT'#9'Krasnoyarsk Time'#9'UTC+07'
+                'THA'#9'Thailand Standard Time'#9'UTC+07'
+                'WIT'#9'Western Indonesian Time'#9'UTC+07'
+                'ACT'#9'ASEAN Common Time'#9'UTC+08'
+                'AWST'#9'Australian Western Standard Time'#9'UTC+08'
+                'BDT'#9'Brunei Time'#9'UTC+08'
+                'CHOT'#9'Choibalsan'#9'UTC+08'
+                'CIT'#9'Central Indonesia Time'#9'UTC+08'
+                'CST China'#9'China Standard Time'#9'UTC+08'
+                'CT'#9'China time'#9'UTC+08'
+                'HKT'#9'Hong Kong Time'#9'UTC+08'
+                'IRKT'#9'Irkutsk Time'#9'UTC+08'
+                'MST Malaysia'#9'Malaysia Standard Time'#9'UTC+08'
+                'MYT'#9'Malaysia Time'#9'UTC+08'
+                'PST Philippine'#9'Philippine Standard Time'#9'UTC+08'
+                'SGT'#9'Singapore Time'#9'UTC+08'
+                'SST'#9'Singapore Standard Time'#9'UTC+08'
+                'ULAT'#9'Ulaanbaatar Time'#9'UTC+08'
+                'WST'#9'Western Standard Time'#9'UTC+08'
+                'CWST'#9'Central Western Standard Time (Australia)'#9'UTC+08:45'
+                'AWDT'#9'Australian Western Daylight Time'#9'UTC+09'
+                'EIT'#9'Eastern Indonesian Time'#9'UTC+09'
+                'JST'#9'Japan Standard Time'#9'UTC+09'
+                'KST'#9'Korea Standard Time'#9'UTC+09'
+                'TLT'#9'Timor Leste Time'#9'UTC+09'
+                'YAKT'#9'Yakutsk Time'#9'UTC+09'
+                'ACST'#9'Australian Central Standard Time'#9'UTC+09:30'
+                
+                  'CST Australia Central'#9'Central Standard Time (Australia)'#9'UTC+09:3' +
+                  '0'
+                'AEST'#9'Australian Eastern Standard Time'#9'UTC+10'
+                'ChST'#9'Chamorro Standard Time'#9'UTC+10'
+                'CHUT'#9'Chuuk Time'#9'UTC+10'
+                'DDUT'#9'Dumont d'#39'Urville Time'#9'UTC+10'
+                'EST Australia'#9'Eastern Standard Time (Australia)'#9'UTC+10'
+                'PGT'#9'Papua New Guinea Time'#9'UTC+10'
+                'VLAT'#9'Vladivostok Time'#9'UTC+10'
+                'ACDT'#9'Australian Central Daylight Savings Time'#9'UTC+10:30'
+                
+                  'CST Australia Central Summer'#9'Central Summer Time (Australia)'#9'UTC' +
+                  '+10:30'
+                'LHST'#9'Lord Howe Standard Time'#9'UTC+10:30'
+                'AEDT'#9'Australian Eastern Daylight Savings Time'#9'UTC+11'
+                'BST Bougainville'#9'Bougainville Standard Time'#9'UTC+11'
+                'KOST'#9'Kosrae Time'#9'UTC+11'
+                'LHST Lord Howe Summer'#9'Lord Howe Summer Time'#9'UTC+11'
+                'MIST'#9'Macquarie Island Station Time'#9'UTC+11'
+                'NCT'#9'New Caledonia Time'#9'UTC+11'
+                'PONT'#9'Pohnpei Standard Time'#9'UTC+11'
+                'SAKT'#9'Sakhalin Island time'#9'UTC+11'
+                'SBT'#9'Solomon Islands Time'#9'UTC+11'
+                'SRET'#9'Srednekolymsk Time'#9'UTC+11'
+                'VUT'#9'Vanuatu Time'#9'UTC+11'
+                'NFT'#9'Norfolk Time'#9'UTC+11:00'
+                'FJT'#9'Fiji Time'#9'UTC+12'
+                'GILT'#9'Gilbert Island Time'#9'UTC+12'
+                'MAGT'#9'Magadan Time'#9'UTC+12'
+                'MHT'#9'Marshall Islands'#9'UTC+12'
+                'NZST'#9'New Zealand Standard Time'#9'UTC+12'
+                'PETT'#9'Kamchatka Time'#9'UTC+12'
+                'TVT'#9'Tuvalu Time'#9'UTC+12'
+                'WAKT'#9'Wake Island Time'#9'UTC+12'
+                'CHAST'#9'Chatham Standard Time'#9'UTC+12:45'
+                'NZDT'#9'New Zealand Daylight Time'#9'UTC+13'
+                'PHOT'#9'Phoenix Island Time'#9'UTC+13'
+                'TKT'#9'Tokelau Time'#9'UTC+13'
+                'TOT'#9'Tonga Time'#9'UTC+13'
+                'CHADT'#9'Chatham Daylight Time'#9'UTC+13:45'
+                'LINT'#9'Line Islands Time'#9'UTC+14'
+                'AZOST'#9'Azores Standard Time'#9'UTC-01'
+                'CVT'#9'Cape Verde Time'#9'UTC-01'
+                'EGT'#9'Eastern Greenland Time'#9'UTC-01'
+                'BRST'#9'Brasilia Summer Time'#9'UTC-02'
+                'FNT'#9'Fernando de Noronha Time'#9'UTC-02'
+                'GST'#9'South Georgia and the South Sandwich Islands'#9'UTC-02'
+                'PMDT'#9'Saint Pierre and Miquelon Daylight time'#9'UTC-02'
+                'UYST'#9'Uruguay Summer Time'#9'UTC-02'
+                'NDT'#9'Newfoundland Daylight Time'#9'UTC-02:30'
+                'ADT'#9'Atlantic Daylight Time'#9'UTC-03'
+                'AMST'#9'Amazon Summer Time (Brazil)'#9'UTC-03'
+                'ART'#9'Argentina Time'#9'UTC-03'
+                'BRT'#9'Brasilia Time'#9'UTC-03'
+                'CLST'#9'Chile Summer Time'#9'UTC-03'
+                'FKST'#9'Falkland Islands Standard Time'#9'UTC-03'
+                'FKST Falkland Islands Summer'#9'Falkland Islands Summer Time'#9'UTC-03'
+                'GFT'#9'French Guiana Time'#9'UTC-03'
+                'PMST'#9'Saint Pierre and Miquelon Standard Time'#9'UTC-03'
+                'PYST'#9'Paraguay Summer Time (South America)'#9'UTC-03'
+                'ROTT'#9'Rothera Research Station Time'#9'UTC-03'
+                'SRT'#9'Suriname Time'#9'UTC-03'
+                'UYT'#9'Uruguay Standard Time'#9'UTC-03'
+                'NST'#9'Newfoundland Standard Time'#9'UTC-03:30'
+                'NT'#9'Newfoundland Time'#9'UTC-03:30'
+                'AMT'#9'Amazon Time (Brazil)'#9'UTC-04'
+                'AST'#9'Atlantic Standard Time'#9'UTC-04'
+                'BOT'#9'Bolivia Time'#9'UTC-04'
+                'CDT Cuba'#9'Cuba Daylight Time'#9'UTC-04'
+                'CLT'#9'Chile Standard Time'#9'UTC-04'
+                'COST'#9'Colombia Summer Time'#9'UTC-04'
+                'ECT'#9'Eastern Caribbean Time'#9'UTC-04'
+                'EDT'#9'Eastern Daylight Time (North America)'#9'UTC-04'
+                'FKT'#9'Falkland Islands Time'#9'UTC-04'
+                'GYT'#9'Guyana Time'#9'UTC-04'
+                'PYT'#9'Paraguay Time (South America)'#9'UTC-04'
+                'VET'#9'Venezuelan Standard Time'#9'UTC-04:30'
+                'ACT Acre'#9'Acre Time'#9'UTC-05'
+                'CDT'#9'Central Daylight Time (North America)'#9'UTC-05'
+                'COT'#9'Colombia Time'#9'UTC-05'
+                'CST Cuba'#9'Cuba Standard Time'#9'UTC-05'
+                'EASST'#9'Easter Island Standard Summer Time'#9'UTC-05'
+                'ECT Ecuador'#9'Ecuador Time'#9'UTC-05'
+                'EST'#9'Eastern Standard Time (North America)'#9'UTC-05'
+                'PET'#9'Peru Time'#9'UTC-05'
+                'CST'#9'Central Standard Time (North America)'#9'UTC-06'
+                'EAST'#9'Easter Island Standard Time'#9'UTC-06'
+                'GALT'#9'Galapagos Time'#9'UTC-06'
+                'MDT'#9'Mountain Daylight Time (North America)'#9'UTC-06'
+                'MST'#9'Mountain Standard Time (North America)'#9'UTC-07'
+                'PDT'#9'Pacific Daylight Time (North America)'#9'UTC-07'
+                'AKDT'#9'Alaska Daylight Time'#9'UTC-08'
+                'CIST'#9'Clipperton Island Standard Time'#9'UTC-08'
+                'PST'#9'Pacific Standard Time (North America)'#9'UTC-08'
+                'AKST'#9'Alaska Standard Time'#9'UTC-09'
+                'GAMT'#9'Gambier Islands'#9'UTC-09'
+                'GIT'#9'Gambier Island Time'#9'UTC-09'
+                'HADT'#9'Hawaii-Aleutian Daylight Time'#9'UTC-09'
+                'MART'#9'Marquesas Islands Time'#9'UTC-09:30'
+                'MIT'#9'Marquesas Islands Time'#9'UTC-09:30'
+                'CKT'#9'Cook Island Time'#9'UTC-10'
+                'HAST'#9'Hawaii-Aleutian Standard Time'#9'UTC-10'
+                'HST'#9'Hawaii Standard Time'#9'UTC-10'
+                'TAHT'#9'Tahiti Time'#9'UTC-10'
+                'NUT'#9'Niue Time'#9'UTC-11'
+                'SST Samoa'#9'Samoa Standard Time'#9'UTC-11'
+                'BIT'#9'Baker Island Time'#9'UTC-12')
+              ItemIndex = 0
+              Position.X = -32.086669921875000000
+              Size.Height = 29.800003051757810000
+              OnChange = SettingsItemFrame1ComboBoxChange
+              OnPopup = SettingsItemFrame1ComboBoxPopup
+            end
+          end
+        end
+        inherited SeparatorLine: TLine
+          Margins.Left = -20.000000000000000000
+          Margins.Right = -20.000000000000000000
+          Position.X = -20.000000000000000000
+          Position.Y = 69.800003051757810000
+          Size.Width = 376.000000000000000000
+          Size.Height = 0.199996948242187500
+        end
+      end
+      inline StringValueSettingsFrame: TSettingsItemFrame
+        Align = Top
+        Position.Y = 140.000000000000000000
+        Size.Width = 336.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        inherited SettingsItemPanel: TGridPanelLayout
+          Size.Width = 336.000000000000000000
+          Size.Height = 69.800003051757810000
+          ControlCollection = <
+            item
+              Column = 0
+              Control = StringValueSettingsFrame.SettingsItemLbl
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = StringValueSettingsFrame.Layout
+              Row = 0
+            end>
+          inherited SettingsItemLbl: TLabel
+            Size.Width = 119.086669921875000000
+            Size.Height = 69.800003051757810000
+            Text = 'String Setting'
+          end
+          inherited Layout: TLayout
+            Size.Width = 206.913330078125000000
+            Size.Height = 69.800003051757810000
+            inherited ValueComboBox: TComboBox
+              Visible = False
+            end
+            inherited ValueEdit: TEdit
+              Position.X = -30.086669921875000000
+              Position.Y = 20.000000000000000000
+              Size.Height = 29.800003051757810000
+              Visible = True
+              OnChange = StringValueSettingsFrameValueEditChange
+            end
+          end
+        end
+        inherited SeparatorLine: TLine
+          Margins.Left = -20.000000000000000000
+          Margins.Right = -20.000000000000000000
+          Position.X = -20.000000000000000000
+          Position.Y = 69.800003051757810000
+          Size.Width = 376.000000000000000000
+          Size.Height = 0.199996948242187500
+        end
+      end
+      inline BoolValueSettingsFrame: TSettingsItemFrame
+        Align = Top
+        Position.Y = 210.000000000000000000
+        Size.Width = 336.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        inherited SettingsItemPanel: TGridPanelLayout
+          Size.Width = 336.000000000000000000
+          Size.Height = 69.800003051757810000
+          ControlCollection = <
+            item
+              Column = 0
+              Control = BoolValueSettingsFrame.SettingsItemLbl
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = BoolValueSettingsFrame.Layout
+              Row = 0
+            end>
+          inherited SettingsItemLbl: TLabel
+            Size.Width = 119.086669921875000000
+            Size.Height = 69.800003051757810000
+            Text = 'Bool Setting'
+          end
+          inherited Layout: TLayout
+            Size.Width = 206.913330078125000000
+            Size.Height = 69.800003051757810000
+            inherited ValueComboBox: TComboBox
+              Visible = False
+            end
+            inherited ValueSwitch: TSwitch
+              Position.X = 128.913330078125000000
+              Size.Height = 29.800003051757810000
+              Visible = True
+              OnSwitch = BoolValueSettingsFrameValueSwitchSwitch
+            end
+          end
+        end
+        inherited SeparatorLine: TLine
+          Margins.Left = -20.000000000000000000
+          Margins.Right = -20.000000000000000000
+          Position.X = -20.000000000000000000
+          Position.Y = 69.800003051757810000
+          Size.Width = 376.000000000000000000
+          Size.Height = 0.199996948242187500
+        end
+      end
+    end
+  end
+end

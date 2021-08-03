@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{036E615F-5677-4BCC-92BD-5FBD31BD902B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Test\NewsAppWithDelphiFMX_tests.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NewsAppWithDelphiFMX.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NewsAppWithDelphiFMX_tests">
+        <MSBuild Projects="Test\NewsAppWithDelphiFMX_tests.dproj"/>
+    </Target>
+    <Target Name="NewsAppWithDelphiFMX_tests:Clean">
+        <MSBuild Projects="Test\NewsAppWithDelphiFMX_tests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NewsAppWithDelphiFMX_tests:Make">
+        <MSBuild Projects="Test\NewsAppWithDelphiFMX_tests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NewsAppWithDelphiFMX">
+        <MSBuild Projects="NewsAppWithDelphiFMX.dproj"/>
+    </Target>
+    <Target Name="NewsAppWithDelphiFMX:Clean">
+        <MSBuild Projects="NewsAppWithDelphiFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NewsAppWithDelphiFMX:Make">
+        <MSBuild Projects="NewsAppWithDelphiFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NewsAppWithDelphiFMX_tests;NewsAppWithDelphiFMX"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NewsAppWithDelphiFMX_tests:Clean;NewsAppWithDelphiFMX:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NewsAppWithDelphiFMX_tests:Make;NewsAppWithDelphiFMX:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
