@@ -16,6 +16,7 @@ I am creating Delphi FireMonkey projects/prototypes for inspiration. It is free,
  - **[Client Controller App](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/Client%20Controller%20Application%20Prototype)** for multi-purpose apps
  - **[Validate & Verify Email IDs with RESTful service](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/MailboxLayer%20API%20Demo%20with%20Delphi)**
  - **[How To Create a News App with Delphi FireMonkey using MediaStack API](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/How%20to%20Create%20a%20News%20App%20with%20Delphi%20Firemonkey)**
+ - **[How To Create A Cross-platform Weather App With Delphi FireMonkey using WeatherStack API](https://github.com/MuminjonGuru/Mastering-FireMonkey-Delphi/tree/master/WeatherAppFMXWeatherStackAPI)**
 
     
 
