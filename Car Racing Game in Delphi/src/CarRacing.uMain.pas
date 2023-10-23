@@ -49,6 +49,10 @@ implementation
 
 {$R *.fmx}
 
+// This procedure handles the collection of coins by the player's car.
+// When the car intersects with a coin, the score is increased, 
+// the score label is updated, and the collected coin is repositioned 
+// to a new random location at the top
 procedure TFormMain.CollectCoins;
 begin
   var X: Integer := 0;
@@ -90,6 +94,10 @@ begin
   end;
 end;
 
+// This procedure handles the movement of the enemy cars in the game.
+// For each enemy car, if its position reaches the bottom of the game window (Y >= 500),
+// it's repositioned to a random X coordinate at the top of the window (Y = 0).
+// If the enemy car hasn't reached the bottom, it simply moves downwards at the specified speed.
 procedure TFormMain.Enemy(Speed: Integer);
 begin
   var X: Integer;
@@ -147,6 +155,10 @@ begin
   end;
 end;
 
+// This procedure checks for game-over conditions.
+// If the player's car intersects with either of the enemy cars,
+// the game timer is disabled, halting the game's progression,
+// and a label (probably indicating "Game Over") is displayed to the user.
 procedure TFormMain.GameOver;
 begin
   if (Car.BoundsRect.IntersectsWith(Enemy1.BoundsRect)) then
@@ -162,6 +174,12 @@ begin
   end;
 end;
 
+// This procedure handles the movement of the road lines in the game.
+// Each rectangle (Rct1, Rct2, Rct3, Rct4) represents a segment of the road line.
+// If a line segment's position reaches the bottom of the game window (Y >= 500),
+// it's repositioned to the top (Y = 0) to give the illusion of a continuous moving road.
+// If the line segment hasn't reached the bottom, it moves downwards 
+// at the specified speed to simulate the car's movement.
 procedure TFormMain.MoveLine(Speed: Integer);
 begin
   if (Rct1.Position.Y >= 500) then
@@ -185,6 +203,12 @@ begin
     Rct4.Position.Y := Rct4.Position.Y + Speed;
 end;
 
+// This procedure manages the movement of the coins in the game.
+// Each coin (Coin1, Coin2, Coin3, Coin4) moves downwards based on the given speed.
+// If a coin's position reaches the bottom of the game window (Y >= 500),
+// it's repositioned to a random X coordinate at the top of the window (Y = 0) 
+// for the player to collect again, thus providing continuous gameplay.
+// Different coins have different random X-coordinate ranges to vary their positions on the road.
 procedure TFormMain.MoveCoins(Speed: Integer);
 begin
   var X: Integer;
